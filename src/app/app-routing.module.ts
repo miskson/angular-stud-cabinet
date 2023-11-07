@@ -11,6 +11,7 @@ import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { component: LoginPageComponent, path: 'login' },
   { component: GeneralPageComponent, path: 'general-info' },
   { component: RecordsBookPageComponent, path: 'recordsbook' },
