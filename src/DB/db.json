@@ -7,5 +7,21 @@
   "categories": [
     { "id": 1, "title": "cat 1" },
     { "id": 2, "title": "cat 2" }
+  ],
+  "signedStudents": [
+    {
+      "id": "1",
+      "name": "John",
+      "surname": "Doe",
+      "email": "john.doe@cit.khpi.edu.ua",
+      "password": "jhonny228"
+    },
+    {
+      "id": "2",
+      "name": "Sarah",
+      "surname": "Connor",
+      "email": "sarah.connor@cit.khpi.edu.ua",
+      "password": "ilbibak"
+    }
   ]
 }

@@ -13,6 +13,7 @@ import { SportsSchedulePageComponent } from './sports-schedule-page/sports-sched
 import { StudyPlanPageComponent } from './study-plan-page/study-plan-page.component';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { RecordsBookPageComponent } from './records-book-page/records-book-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,12 @@ import { RecordsBookPageComponent } from './records-book-page/records-book-page.
     PaymentPageComponent,
     RecordsBookPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
