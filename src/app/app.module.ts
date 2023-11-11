@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginPageComponent } from './pages/login-page/login-page.component'
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { GeneralPageComponent } from './pages/general-page/general-page.component';
 import { RatingPageComponent } from './pages/rating-page/rating-page.component';
 import { StudentDebtPageComponent } from './pages/student-debt-page/student-debt-page.component';
@@ -19,7 +19,6 @@ import { CabinetButtonComponent } from './shared/cabinet-button/cabinet-button.c
 @NgModule({
   declarations: [
     AppComponent,
-    LoginPageComponent,
     GeneralPageComponent,
     RatingPageComponent,
     StudentDebtPageComponent,
@@ -28,13 +27,14 @@ import { CabinetButtonComponent } from './shared/cabinet-button/cabinet-button.c
     StudyPlanPageComponent,
     PaymentPageComponent,
     RecordsBookPageComponent,
-    CabinetButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    LoginPageComponent,
+    CabinetButtonComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
