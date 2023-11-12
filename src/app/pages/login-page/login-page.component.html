@@ -1,10 +1,19 @@
 <div class="login-page">
-    <div class="login-page__wrapper">
-        <form class="login-page__form" [formGroup]="login" (ngSubmit)="loginData(login)">
-            <input type="email" formControlName="email" placeholder="Student email">
-            <input type="password" formControlName="password" placeholder="Password">
-            <button type="submit">log-in</button>
-        </form>
-    </div>
-    <app-cabinet-button displayType="primary" [disabled]="false">Button</app-cabinet-button>
+  <div class="login-page__wrapper">
+    <form
+      class="login-page__form"
+      [formGroup]="login"
+      (ngSubmit)="loginData(login)"
+    >
+      <input type="email" formControlName="email" placeholder="Student email" />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <app-cabinet-button displayType="primary" type="submit"
+        >Log-in</app-cabinet-button
+      >
+    </form>
+  </div>
 </div>

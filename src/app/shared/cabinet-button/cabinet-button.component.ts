@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CabinetButtonDisplayType } from './models/cabinet-button.model';
 import { NgClass } from '@angular/common';
 
@@ -15,6 +15,12 @@ export class CabinetButtonComponent {
   @Input() type: string = 'button';
 
   @Input() displayType: CabinetButtonDisplayType = 'primary';
+
+  @Output() onClick = new EventEmitter<MouseEvent>();
+
+  onButtonClick(event: MouseEvent) {
+    this.onClick.emit(event);
+  }
 
   get buttonClass(): { [key: string]: boolean } {
     return {
