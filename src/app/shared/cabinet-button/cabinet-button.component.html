@@ -1,0 +1,11 @@
+<button
+  class="cabinet-button"
+  [type]="type"
+  [disabled]="disabled"
+  [ngClass]="buttonClass"
+  aria-label="button"
+  [attr.aria-disabled]="disabled.toString()"
+  (click)="onButtonClick($event)"
+>
+  <ng-content></ng-content>
+</button>

@@ -1,0 +1,17 @@
+<div class="login-page">
+  <div class="login-page__wrapper">
+    <form
+      class="login-page__form"
+      [formGroup]="login"
+      (ngSubmit)="loginUser(login)"
+    >
+      <input type="email" formControlName="email" placeholder="Student email" />
+      <input
+        type="password"
+        formControlName="password"
+        placeholder="Password"
+      />
+      <app-cabinet-button type="submit">Log-in</app-cabinet-button>
+    </form>
+  </div>
+</div>
