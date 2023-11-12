@@ -28,7 +28,6 @@ export class LoginPageComponent {
     this.authService.getStudentByEmail(email as string).subscribe(
       (res) => {
         if (res.length > 0 && res[0].password === password) {
-          console.log(res);
           sessionStorage.setItem('email', email as string);
           this.router.navigate(['general-info']);
           this.login.reset();
