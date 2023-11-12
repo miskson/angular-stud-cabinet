@@ -15,6 +15,7 @@ import { PaymentPageComponent } from './pages/payment-page/payment-page.componen
 import { RecordsBookPageComponent } from './pages/records-book-page/records-book-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CabinetButtonComponent } from './shared/cabinet-button/cabinet-button.component';
+import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CabinetButtonComponent } from './shared/cabinet-button/cabinet-button.c
     StudyPlanPageComponent,
     PaymentPageComponent,
     RecordsBookPageComponent,
+    NotfoundPageComponent,
   ],
   imports: [
     BrowserModule,

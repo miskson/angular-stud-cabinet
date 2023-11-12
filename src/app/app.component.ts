@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'cabinet';
-  data = {}
-  constructor(private http: HttpClient) {
-    this.http.get('http://localhost:3000/posts').subscribe((data) => {
-      this.data = data
-    })
+  constructor(private http: HttpClient, private router: Router) {}
+
+  logOut() {
+    sessionStorage.clear();
+    this.router.navigate(['login']);
   }
 }

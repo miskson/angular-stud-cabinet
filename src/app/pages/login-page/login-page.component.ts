@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 import { CabinetButtonComponent } from 'src/app/shared/cabinet-button/cabinet-button.component';
 
 @Component({
@@ -13,7 +14,7 @@ import { CabinetButtonComponent } from 'src/app/shared/cabinet-button/cabinet-bu
 })
 export class LoginPageComponent {
   login: FormGroup | any;
-  constructor(private _http: HttpClient, private _route: Router) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit(): void {
     this.login = new FormGroup({
@@ -22,24 +23,18 @@ export class LoginPageComponent {
     });
   }
 
-  loginData(login: FormGroup) {
-    this._http.get<any>('http://localhost:3000/signedStudents').subscribe(
+  loginUser(login: FormGroup) {
+    const { email, password } = this.login.value;
+    this.authService.getStudentByEmail(email as string).subscribe(
       (res) => {
-        console.log(res);
-        console.log(this.login.email, this.login.password);
-        const isUserMatch = res.find((a: any) => {
-          return (
-            a.email === this.login.value.email &&
-            a.password === this.login.value.password
-          );
-        });
-
-        if (isUserMatch) {
+        if (res.length > 0 && res[0].password === password) {
+          console.log(res);
+          sessionStorage.setItem('email', email as string);
+          this.router.navigate(['general-info']);
           this.login.reset();
-          this._route.navigate(['general-info']);
         } else {
           alert('USER NOT FOUND');
-          this._route.navigate(['login']);
+          this.router.navigate(['login']);
         }
       },
       (err) => {
