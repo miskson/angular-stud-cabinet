@@ -9,18 +9,50 @@ import { SportsSchedulePageComponent } from './pages/sports-schedule-page/sports
 import { StudyPlanPageComponent } from './pages/study-plan-page/study-plan-page.component';
 import { PaymentPageComponent } from './pages/payment-page/payment-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
+import { authGuard } from './guards/auth.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { component: LoginPageComponent, path: 'login' },
-  { component: GeneralPageComponent, path: 'general-info' },
-  { component: RecordsBookPageComponent, path: 'recordsbook' },
-  { component: RatingPageComponent, path: 'rating' },
-  { component: StudentDebtPageComponent, path: 'student-debt' },
-  { component: StudySchedulePageComponent, path: 'study-schedule' },
-  { component: SportsSchedulePageComponent, path: 'sports-schedule' },
-  { component: StudyPlanPageComponent, path: 'study-plan' },
-  { component: PaymentPageComponent, path: 'payment' },
+  {
+    component: GeneralPageComponent,
+    path: 'general-info',
+    canActivate: [authGuard],
+  },
+  {
+    component: RecordsBookPageComponent,
+    path: 'recordsbook',
+    canActivate: [authGuard],
+  },
+  { component: RatingPageComponent, path: 'rating', canActivate: [authGuard] },
+  {
+    component: StudentDebtPageComponent,
+    path: 'student-debt',
+    canActivate: [authGuard],
+  },
+  {
+    component: StudySchedulePageComponent,
+    path: 'study-schedule',
+    canActivate: [authGuard],
+  },
+  {
+    component: SportsSchedulePageComponent,
+    path: 'sports-schedule',
+    canActivate: [authGuard],
+  },
+  {
+    component: StudyPlanPageComponent,
+    path: 'study-plan',
+    canActivate: [authGuard],
+  },
+  {
+    component: PaymentPageComponent,
+    path: 'payment',
+    canActivate: [authGuard],
+  },
+  { path: '**', redirectTo: 'notfound', pathMatch: 'full' },
+  { component: NotfoundPageComponent, path: 'notfound' },
 ];
 
 @NgModule({
