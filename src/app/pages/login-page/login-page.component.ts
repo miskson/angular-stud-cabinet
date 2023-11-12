@@ -1,17 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import {
-  FormGroup,
-  FormBuilder,
-  FormControl,
-  Validators,
-} from '@angular/forms';
+import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CabinetButtonComponent } from 'src/app/shared/cabinet-button/cabinet-button.component';
 
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.scss'],
+  standalone: true,
+  imports: [CabinetButtonComponent, ReactiveFormsModule],
 })
 export class LoginPageComponent {
   login: FormGroup | any;
