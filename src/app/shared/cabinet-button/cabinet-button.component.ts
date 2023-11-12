@@ -22,10 +22,7 @@ export class CabinetButtonComponent {
     this.onClick.emit(event);
   }
 
-  get buttonClass(): { [key: string]: boolean } {
-    return {
-      'cabinet-button--primary': this.displayType === 'primary',
-      'cabinet-button--secondary': this.displayType === 'secondary',
-    };
+  get buttonClass(): string {
+    return `cabinet-button--${this.displayType}`;
   }
 }
