@@ -11,46 +11,60 @@ import { PaymentPageComponent } from './pages/payment-page/payment-page.componen
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { authGuard } from './guards/auth.guard';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { component: LoginPageComponent, path: 'login' },
   {
-    component: GeneralPageComponent,
-    path: 'general-info',
+    component: MainPageComponent,
+    path: 'student',
+    pathMatch: 'prefix',
     canActivate: [authGuard],
+    children: [
+      {
+        component: GeneralPageComponent,
+        path: 'general-info',
+        canActivate: [authGuard],
+      },
+      {
+        component: RecordsBookPageComponent,
+        path: 'recordsbook',
+        canActivate: [authGuard],
+      },
+      {
+        component: RatingPageComponent,
+        path: 'rating',
+        canActivate: [authGuard],
+      },
+      {
+        component: StudentDebtPageComponent,
+        path: 'student-debt',
+        canActivate: [authGuard],
+      },
+      {
+        component: StudySchedulePageComponent,
+        path: 'study-schedule',
+        canActivate: [authGuard],
+      },
+      {
+        component: SportsSchedulePageComponent,
+        path: 'sports-schedule',
+        canActivate: [authGuard],
+      },
+      {
+        component: StudyPlanPageComponent,
+        path: 'study-plan',
+        canActivate: [authGuard],
+      },
+      {
+        component: PaymentPageComponent,
+        path: 'payment',
+        canActivate: [authGuard],
+      },
+    ],
   },
-  {
-    component: RecordsBookPageComponent,
-    path: 'recordsbook',
-    canActivate: [authGuard],
-  },
-  { component: RatingPageComponent, path: 'rating', canActivate: [authGuard] },
-  {
-    component: StudentDebtPageComponent,
-    path: 'student-debt',
-    canActivate: [authGuard],
-  },
-  {
-    component: StudySchedulePageComponent,
-    path: 'study-schedule',
-    canActivate: [authGuard],
-  },
-  {
-    component: SportsSchedulePageComponent,
-    path: 'sports-schedule',
-    canActivate: [authGuard],
-  },
-  {
-    component: StudyPlanPageComponent,
-    path: 'study-plan',
-    canActivate: [authGuard],
-  },
-  {
-    component: PaymentPageComponent,
-    path: 'payment',
-    canActivate: [authGuard],
-  },
+
   { path: '**', redirectTo: 'notfound', pathMatch: 'full' },
   { component: NotfoundPageComponent, path: 'notfound' },
 ];
