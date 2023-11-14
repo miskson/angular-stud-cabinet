@@ -16,6 +16,7 @@ import { RecordsBookPageComponent } from './pages/records-book-page/records-book
 import { ReactiveFormsModule } from '@angular/forms';
 import { CabinetButtonComponent } from './shared/cabinet-button/cabinet-button.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
+import { MainPageComponent } from './pages/main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.compo
     PaymentPageComponent,
     RecordsBookPageComponent,
     NotfoundPageComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,

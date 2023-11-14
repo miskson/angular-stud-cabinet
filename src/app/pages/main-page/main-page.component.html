@@ -1,0 +1,24 @@
+<main class="main-page">
+    <aside>
+        <a routerLink="general-info">General Info</a>
+        <br>
+        <a routerLink="recordsbook">Recordsbook</a>
+        <br>
+        <a routerLink="rating">Rating</a>
+        <br>
+        <a routerLink="student-debt">Student's Debt</a>
+        <br>
+        <a routerLink="study-schedule">Study Schedule</a>
+        <br>
+        <a routerLink="sports-schedule">Sports Schedule</a>
+        <br>
+        <a routerLink="study-plan">Study Plan</a>
+        <br>
+        <a routerLink="payment">Study Payment</a>
+        <br>
+        <app-cabinet-button displayType="secondary" (onClick)="logOut()">Log-out</app-cabinet-button>
+    </aside>
+    <div class="main-page__content-wrapper">
+        <router-outlet></router-outlet>
+    </div>
+</main>
