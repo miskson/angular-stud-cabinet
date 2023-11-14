@@ -23,5 +23,45 @@
       "email": "sarah.connor@cit.khpi.edu.ua",
       "password": "ilbibak"
     }
+  ],
+  "studentsInfo": [
+    {
+      "id": "1",
+      "email": "john.doe@cit.khpi.edu.ua",
+      "general": {
+        "name": "John",
+        "surname": "Doe",
+        "patronymic": "-",
+        "year": "6",
+        "group": "CS-M922c",
+        "faculty": "Computer Science and Informational Technologies",
+        "department": "Computer Engineering and Programming",
+        "speciality": "Specialized Computer Systems",
+        "profession": "-",
+        "program": "Modern Programming, Mobile Devices and Computer Games",
+        "degree": "Master",
+        "form": "full-time",
+        "payment": "Budget"
+      }
+    },
+    {
+      "id": "2",
+      "email": "sarah.connor@cit.khpi.edu.ua",
+      "general": {
+        "name": "Sarah",
+        "surname": "Connor",
+        "patronymic": "-",
+        "year": "3",
+        "group": "CS-922b",
+        "faculty": "Computer Science and Informational Technologies",
+        "department": "Computer Engineering and Programming",
+        "speciality": "Specialized Computer Systems",
+        "profession": "-",
+        "program": "Modern Programming, Mobile Devices and Computer Games",
+        "degree": "Bachelor",
+        "form": "Distance",
+        "payment": "Contract"
+      }
+    }
   ]
 }
