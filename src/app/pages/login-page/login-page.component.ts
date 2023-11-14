@@ -29,7 +29,7 @@ export class LoginPageComponent {
       (res) => {
         if (res.length > 0 && res[0].password === password) {
           sessionStorage.setItem('email', email as string);
-          this.router.navigate(['general-info']);
+          this.router.navigate(['student/general-info']);
           this.login.reset();
         } else {
           alert('USER NOT FOUND');
