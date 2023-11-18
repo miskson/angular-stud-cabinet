@@ -1,13 +1,4 @@
 {
-  "posts": [
-    { "id": 1, "title": "post 1" },
-    { "id": 2, "title": "post 2" },
-    { "id": 3, "title": "post 3" }
-  ],
-  "categories": [
-    { "id": 1, "title": "cat 1" },
-    { "id": 2, "title": "cat 2" }
-  ],
   "signedStudents": [
     {
       "id": "1",
@@ -24,44 +15,1371 @@
       "password": "ilbibak"
     }
   ],
-  "studentsInfo": [
+  "generalStudentsInfo": [
     {
-      "id": "1",
-      "email": "john.doe@cit.khpi.edu.ua",
-      "general": {
-        "name": "John",
-        "surname": "Doe",
-        "patronymic": "-",
-        "year": "6",
-        "group": "CS-M922c",
-        "faculty": "Computer Science and Informational Technologies",
-        "department": "Computer Engineering and Programming",
-        "speciality": "Specialized Computer Systems",
-        "profession": "-",
-        "program": "Modern Programming, Mobile Devices and Computer Games",
-        "degree": "Master",
-        "form": "full-time",
-        "payment": "Budget"
-      }
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "John",
+      "surname": "Doe",
+      "patronymic": "-",
+      "year": "6",
+      "group": "CS-M922c",
+      "faculty": "Computer Science and Informational Technologies",
+      "department": "Computer Engineering and Programming",
+      "speciality": "Specialized Computer Systems",
+      "profession": "-",
+      "program": "Modern Programming, Mobile Devices and Computer Games",
+      "degree": "Master",
+      "form": "full-time",
+      "payment": "Budget"
     },
     {
-      "id": "2",
-      "email": "sarah.connor@cit.khpi.edu.ua",
-      "general": {
-        "name": "Sarah",
-        "surname": "Connor",
-        "patronymic": "-",
-        "year": "3",
-        "group": "CS-922b",
-        "faculty": "Computer Science and Informational Technologies",
-        "department": "Computer Engineering and Programming",
-        "speciality": "Specialized Computer Systems",
-        "profession": "-",
-        "program": "Modern Programming, Mobile Devices and Computer Games",
-        "degree": "Bachelor",
-        "form": "Distance",
-        "payment": "Contract"
-      }
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Sarah",
+      "surname": "Connor",
+      "patronymic": "-",
+      "year": "3",
+      "group": "CS-922b",
+      "faculty": "Computer Science and Informational Technologies",
+      "department": "Computer Engineering and Programming",
+      "speciality": "Specialized Computer Systems",
+      "profession": "-",
+      "program": "Modern Programming, Mobile Devices and Computer Games",
+      "degree": "Bachelor",
+      "form": "Distance",
+      "payment": "Contract"
+    }
+  ],
+  "studyPlan": [
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semesters": [
+        {
+          "semester": "1",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Corporate networks software",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "year": "1",
+              "semester": "1",
+              "credit": "4.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Economy and Management",
+              "departmentAbr": "EM"
+            },
+            {
+              "name": "Professional foreign language",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            }
+          ]
+        },
+        {
+          "semester": "2",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Corporate networks software",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "year": "1",
+              "semester": "1",
+              "credit": "4.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Economy and Management",
+              "departmentAbr": "EM"
+            },
+            {
+              "name": "Professional foreign language",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semesters": [
+        {
+          "semester": "1",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Corporate networks software",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "year": "1",
+              "semester": "1",
+              "credit": "4.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Economy and Management",
+              "departmentAbr": "EM"
+            },
+            {
+              "name": "Professional foreign language",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            }
+          ]
+        },
+        {
+          "semester": "2",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "5.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Corporate networks software",
+              "year": "1",
+              "semester": "1",
+              "credit": "5.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "year": "1",
+              "semester": "1",
+              "credit": "4.00",
+              "hours": "4.00",
+              "type": "exam",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Economy and Management",
+              "departmentAbr": "EM"
+            },
+            {
+              "name": "Professional foreign language",
+              "year": "1",
+              "semester": "1",
+              "credit": "3.00",
+              "hours": "2.00",
+              "type": "credit",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "studentPayments": [
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "amount": "17900",
+      "currency": "UAH",
+      "paymentDateString": "17.11.2023",
+      "paymentDateISO": "2023-11-17T14:48:00.000Z",
+      "semester": "11",
+      "contractNumber": "1337",
+      "contractISOdate": "2022-09-01T14:48:00.000Z"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "amount": "17900",
+      "currency": "UAH",
+      "paymentDateString": "04.05.2023",
+      "paymentDateISO": "2023-05-04T14:48:00.000Z",
+      "semester": "10",
+      "contractNumber": "1337",
+      "contractISOdate": "2022-09-01T14:48:00.000Z"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "amount": "17900",
+      "currency": "UAH",
+      "paymentDateString": "03.10.2022",
+      "paymentDateISO": "2023-10-03T14:48:00.000Z",
+      "semester": "9",
+      "contractNumber": "1337",
+      "contractISOdate": "2022-09-01T14:48:00.000Z"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "amount": "0",
+      "currency": "UAH",
+      "paymentDateString": "-",
+      "paymentDateISO": "-",
+      "semester": "11",
+      "contractNumber": "1234",
+      "contractISOdate": "2022-09-01T14:48:00.000Z"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "amount": "0",
+      "currency": "UAH",
+      "paymentDateString": "-",
+      "paymentDateISO": "-",
+      "semester": "10",
+      "contractNumber": "1234",
+      "contractISOdate": "2022-09-01T14:48:00.000Z"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "amount": "0",
+      "currency": "UAH",
+      "paymentDateString": "-",
+      "paymentDateISO": "-",
+      "semester": "9",
+      "contractNumber": "1234",
+      "contractISOdate": "2022-09-01T14:48:00.000Z"
+    }
+  ],
+  "studentRecordsbook": [
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semesters": [
+        {
+          "semester": "1",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Dmytrienko V.D.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Corporate networks software",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "-",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "department": "Economy and Management",
+              "departmentAbr": "EM",
+              "type": "credit",
+              "lecturer": "Mehovich S.A.",
+              "grade": "95",
+              "gradeECTS": "A",
+              "gradeNationa": "5"
+            },
+            {
+              "name": "Professional foreign language",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "credit",
+              "lecturer": "Salionovich L.M.",
+              "grade": "70",
+              "gradeECTS": "D",
+              "gradeNationa": "3"
+            }
+          ]
+        },
+        {
+          "semester": "2",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Dmytrienko V.D.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Corporate networks software",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "-",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "department": "Economy and Management",
+              "departmentAbr": "EM",
+              "type": "credit",
+              "lecturer": "Mehovich S.A.",
+              "grade": "95",
+              "gradeECTS": "A",
+              "gradeNationa": "5"
+            },
+            {
+              "name": "Professional foreign language",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "credit",
+              "lecturer": "Salionovich L.M.",
+              "grade": "70",
+              "gradeECTS": "D",
+              "gradeNationa": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semesters": [
+        {
+          "semester": "1",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Dmytrienko V.D.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Corporate networks software",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "-",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "department": "Economy and Management",
+              "departmentAbr": "EM",
+              "type": "credit",
+              "lecturer": "Mehovich S.A.",
+              "grade": "95",
+              "gradeECTS": "A",
+              "gradeNationa": "5"
+            },
+            {
+              "name": "Professional foreign language",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "credit",
+              "lecturer": "Salionovich L.M.",
+              "grade": "70",
+              "gradeECTS": "D",
+              "gradeNationa": "3"
+            }
+          ]
+        },
+        {
+          "semester": "2",
+          "subjects": [
+            {
+              "name": "Decision-making tools and algorithms",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Dmytrienko V.D.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modeling and optimization of computer games content",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Corporate networks software",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "Kozina Ol.An.",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Modern secure programming technologies",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "exam",
+              "lecturer": "-",
+              "grade": "60",
+              "gradeECTS": "E",
+              "gradeNationa": "3"
+            },
+            {
+              "name": "Innovative entrepreneurship and startup project management",
+              "department": "Economy and Management",
+              "departmentAbr": "EM",
+              "type": "credit",
+              "lecturer": "Mehovich S.A.",
+              "grade": "95",
+              "gradeECTS": "A",
+              "gradeNationa": "5"
+            },
+            {
+              "name": "Professional foreign language",
+              "department": "Computer Engineering and Programming",
+              "departmentAbr": "CEP",
+              "type": "credit",
+              "lecturer": "Salionovich L.M.",
+              "grade": "70",
+              "gradeECTS": "D",
+              "gradeNationa": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "StudentRatingList": [
+    {
+      "name": "John Doe",
+      "group": "CS-M922c",
+      "averageMark": "3",
+      "rating": "5"
+    },
+    {
+      "name": "Sarah Connor",
+      "group": "CS-M922b",
+      "averageMark": "5",
+      "rating": "1"
+    },
+    {
+      "name": "Joe Bidon",
+      "group": "CS-M922a",
+      "averageMark": "4.5",
+      "rating": "2"
+    },
+    {
+      "name": "Mykola Parasyuk",
+      "group": "CS-M922a",
+      "averageMark": "4",
+      "rating": "3"
+    },
+    {
+      "name": "Viktor Zahl",
+      "group": "CS-M922a",
+      "averageMark": "3.1",
+      "rating": "4"
+    }
+  ],
+  "StudentAcademicDebt": [
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "debts": [
+        {
+          "subject": "Military Training",
+          "controlType": "-",
+          "credit": "4.00",
+          "semester": 8,
+          "year": 4,
+          "department": "Military Department",
+          "departmentAbr": "MilD",
+          "lecturer": "-"
+        },
+        {
+          "subject": "Advanced Mathematics",
+          "controlType": "Exam",
+          "credit": "4.00",
+          "semester": 4,
+          "year": 2,
+          "department": "Mathematics Department",
+          "departmentAbr": "MD",
+          "lecturer": "Chikina N.A."
+        }
+      ]
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "debts": [
+        {
+          "subject": "Physical Education",
+          "controlType": "credit",
+          "credit": "4.00",
+          "semester": 7,
+          "year": 4,
+          "department": "Sports Department",
+          "departmentAbr": "SD",
+          "lecturer": "Kazak V.Y."
+        }
+      ]
+    }
+  ],
+  "StudentStudySchedule": [
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "monday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "tuesday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "wednesday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "thursday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "friday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "saturday": [],
+      "sunday": []
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "monday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "tuesday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "wednesday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "thursday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "friday": [
+        {
+          "classTime": 1,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 2,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 3,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 4,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 5,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "classTime": 6,
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        }
+      ],
+      "saturday": [],
+      "sunday": []
+    }
+  ],
+  "SportsList": ["Boxing", "Wrestling", "Basketball"],
+  "SportSchedule": [
+    {
+      "day": "monday",
+      "classTime": 1,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "monday",
+      "classTime": 2,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "monday",
+      "classTime": 1,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "monday",
+      "classTime": 3,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "monday",
+      "classTime": 5,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "monday",
+      "classTime": 5,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "tuesday",
+      "classTime": 1,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "tuesday",
+      "classTime": 2,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "tuesday",
+      "classTime": 1,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "tuesday",
+      "classTime": 3,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "wednesday",
+      "classTime": 1,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "wednesday",
+      "classTime": 3,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "wednesday",
+      "classTime": 5,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "wednesday",
+      "classTime": 5,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "thursday",
+      "classTime": 1,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "thursday",
+      "classTime": 2,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "thursday",
+      "classTime": 1,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "thursday",
+      "classTime": 3,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "thursday",
+      "classTime": 5,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "thursday",
+      "classTime": 5,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "friday",
+      "classTime": 1,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "friday",
+      "classTime": 2,
+      "subject": "Boxing",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "friday",
+      "classTime": 1,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "friday",
+      "classTime": 3,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "friday",
+      "classTime": 5,
+      "subject": "Wrestling",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
+    },
+    {
+      "day": "friday",
+      "classTime": 5,
+      "subject": "Basketball",
+      "coach": "Chikina N.A.",
+      "building": "complex1"
     }
   ]
 }

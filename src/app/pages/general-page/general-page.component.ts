@@ -15,7 +15,6 @@ export class GeneralPageComponent {
   getGeneralInfoByEmail(email: string) {
     this.dataService.getStudentGeneralInfoByEmail(email as string).subscribe(
       (res) => {
-        console.log(email, res);
         this.data = res;
       },
       (err) => {
