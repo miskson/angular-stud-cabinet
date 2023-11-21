@@ -1,0 +1,20 @@
+<div class="cabinet-input">
+  <label [for]="inputId">{{ labelText }}</label>
+  <div
+    class="cabinet-input__outline"
+    [ngClass]="{ 'input-disabled': disabled }"
+  >
+    <input
+      [id]="inputId"
+      [type]="type"
+      class="cabinet-input__field"
+      [placeholder]="placeholder"
+      [value]="inputValue"
+      [disabled]="disabled"
+      [formControl]="control"
+    />
+  </div>
+  <!-- <small> -->
+  <!-- <ng-content select="cabinet-input__error, [cabinetError]"></ng-content> -->
+  <!-- </small> -->
+</div>

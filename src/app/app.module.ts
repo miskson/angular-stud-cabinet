@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CabinetButtonComponent } from './shared/cabinet-button/cabinet-button.component';
 import { NotfoundPageComponent } from './pages/notfound-page/notfound-page.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
+import { CabinetInputComponent } from './shared/cabinet-input/cabinet-input.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { MainPageComponent } from './pages/main-page/main-page.component';
     ReactiveFormsModule,
     LoginPageComponent,
     CabinetButtonComponent,
+    CabinetInputComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

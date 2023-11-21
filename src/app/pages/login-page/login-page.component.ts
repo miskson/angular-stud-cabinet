@@ -1,36 +1,49 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
+import {
+  FormGroup,
+  FormControl,
+  ReactiveFormsModule,
+  FormBuilder,
+  Validators,
+} from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth/auth.service';
 import { CabinetButtonComponent } from 'src/app/shared/cabinet-button/cabinet-button.component';
+import { CabinetInputComponent } from 'src/app/shared/cabinet-input/cabinet-input.component';
 
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.scss'],
   standalone: true,
-  imports: [CabinetButtonComponent, ReactiveFormsModule],
+  imports: [CabinetInputComponent, CabinetButtonComponent, ReactiveFormsModule],
 })
 export class LoginPageComponent {
-  login: FormGroup | any;
-  constructor(private router: Router, private authService: AuthService) {}
+  login = this.fb.group({
+    email: ['', [Validators.required]],
+    password: ['', [Validators.required]],
+  });
 
-  ngOnInit(): void {
-    this.login = new FormGroup({
-      email: new FormControl(),
-      password: new FormControl(),
-    });
+  constructor(
+    private router: Router,
+    private authService: AuthService,
+    private fb: FormBuilder
+  ) {}
+
+  ngOnInit(): void {}
+
+  getControl(name: string) {
+    return this.login.get(name) as FormControl;
   }
 
   loginUser(login: FormGroup) {
-    const { email, password } = this.login.value;
+    const { email, password } = login.value;
     this.authService.getStudentByEmail(email as string).subscribe(
       (res) => {
         if (res.length > 0 && res[0].password === password) {
           sessionStorage.setItem('email', email as string);
           this.router.navigate(['student/general-info']);
-          this.login.reset();
+          login.reset();
         } else {
           alert('USER NOT FOUND');
           this.router.navigate(['login']);
