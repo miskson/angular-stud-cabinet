@@ -20,7 +20,7 @@ import { CabinetInputComponent } from 'src/app/shared/cabinet-input/cabinet-inpu
 })
 export class LoginPageComponent {
   login = this.fb.group({
-    email: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required]],
   });
 
@@ -28,7 +28,9 @@ export class LoginPageComponent {
     private router: Router,
     private authService: AuthService,
     private fb: FormBuilder
-  ) {}
+  ) {
+    this.login.valueChanges.subscribe((val) => console.log(val));
+  }
 
   ngOnInit(): void {}
 

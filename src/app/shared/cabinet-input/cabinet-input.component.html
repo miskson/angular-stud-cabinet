@@ -5,6 +5,7 @@
     [ngClass]="{ 'input-disabled': disabled }"
   >
     <input
+      [class.invalid]="control.invalid && control.dirty && control.touched"
       [id]="inputId"
       [type]="type"
       class="cabinet-input__field"
@@ -14,7 +15,9 @@
       [formControl]="control"
     />
   </div>
-  <!-- <small> -->
-  <!-- <ng-content select="cabinet-input__error, [cabinetError]"></ng-content> -->
-  <!-- </small> -->
+  <ng-container *ngIf="control.invalid && control.dirty && control.touched">
+    <small *ngFor="let err of control.errors | keyvalue">
+      {{ errorMessages[err.key] }}
+    </small>
+  </ng-container>
 </div>

@@ -1,4 +1,4 @@
-import { NgClass } from '@angular/common';
+import { NgFor, NgClass, CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, ReactiveFormsModule } from '@angular/forms';
 
@@ -6,7 +6,7 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   selector: 'app-cabinet-input',
   templateUrl: './cabinet-input.component.html',
   styleUrls: ['./cabinet-input.component.scss'],
-  imports: [NgClass, ReactiveFormsModule],
+  imports: [NgClass, NgFor, CommonModule, ReactiveFormsModule],
   standalone: true,
 })
 export class CabinetInputComponent {
@@ -29,4 +29,9 @@ export class CabinetInputComponent {
   onTouched!: () => void;
 
   inputValue: string = '';
+
+  errorMessages: Record<string, string> = {
+    required: 'This field is required.',
+    email: 'The email is invalid.'
+  }
 }
