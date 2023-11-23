@@ -14,6 +14,9 @@
       [disabled]="disabled"
       [formControl]="control"
     />
+    <ng-container *ngIf="initialType === 'password'">
+      <button type="button" (click)="togglePasswordReveal()">(0)</button>
+    </ng-container>
   </div>
   <ng-container *ngIf="control.invalid && control.dirty && control.touched">
     <small *ngFor="let err of control.errors | keyvalue">

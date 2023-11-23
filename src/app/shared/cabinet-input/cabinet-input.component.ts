@@ -14,7 +14,9 @@ export class CabinetInputComponent {
 
   @Input() disabled: boolean = false;
 
-  @Input() type: string = 'text';
+  @Input() type: 'text' | 'password' | 'email' = 'text';
+
+  @Input() hidden: boolean = true;
 
   @Input() placeholder: string = '';
 
@@ -30,8 +32,19 @@ export class CabinetInputComponent {
 
   inputValue: string = '';
 
+  initialType: string = '';
+
   errorMessages: Record<string, string> = {
     required: 'This field is required.',
-    email: 'The email is invalid.'
+    email: 'The email is invalid.',
+  };
+
+  togglePasswordReveal() {
+    this.hidden = !this.hidden;
+    this.hidden ? (this.type = 'password') : (this.type = 'text');
+  }
+
+  ngOnInit(): void {
+    this.initialType = this.type;
   }
 }
