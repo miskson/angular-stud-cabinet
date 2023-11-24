@@ -1,0 +1,42 @@
+<div class="cabinet-input">
+  <label
+    class="cabinet-input__label"
+    [ngClass]="{ 'input-disabled': disabled }"
+    [for]="inputId"
+    >{{ labelText }}</label
+  >
+  <div
+    class="cabinet-input__outline"
+    [ngClass]="{ 'input-disabled': disabled }"
+  >
+    <input
+      [ngClass]="{
+        'initial-password': initialType === 'password',
+        'input-invalid': control.invalid && control.dirty && control.touched
+      }"
+      [id]="inputId"
+      [type]="type"
+      class="cabinet-input__field"
+      [placeholder]="placeholder"
+      [value]="inputValue"
+      [attr.disabled]="disabled"
+      [readOnly]="disabled"
+      [formControl]="control"
+    />
+    <ng-container *ngIf="initialType === 'password'">
+      <button class="cabinet-input__visibility-btn" type="button" (click)="togglePasswordReveal()">
+        <img class="cabinet-input__visibility-icon" src="assets/icons/eye-icon1.svg">
+      </button>
+    </ng-container>
+  </div>
+  <div class="cabinet-input__error-wrapper">
+    <ng-container *ngIf="control.invalid && control.dirty && control.touched">
+      <small
+        class="cabinet-input__error"
+        *ngFor="let err of control.errors | keyvalue"
+      >
+        {{ errorMessages[err.key] }}
+      </small>
+    </ng-container>
+  </div>
+</div>

@@ -5,12 +5,18 @@
       [formGroup]="login"
       (ngSubmit)="loginUser(login)"
     >
-      <input type="email" formControlName="email" placeholder="Student email" />
-      <input
+      <app-cabinet-input
+        labelText="E-mail"
+        placeholder="student.email@exmpl.khpi.edu.ua"
+        type="email"
+        [control]="getControl('email')"
+      ></app-cabinet-input>
+      <app-cabinet-input
+        labelText="Password"
         type="password"
-        formControlName="password"
         placeholder="Password"
-      />
+        [control]="getControl('password')"
+      ></app-cabinet-input>
       <app-cabinet-button type="submit">Log-in</app-cabinet-button>
     </form>
   </div>
