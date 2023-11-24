@@ -1,0 +1,114 @@
+.cabinet-input {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+    width: fit-content;
+
+    &__label {
+        display: inline-flex;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 8px;
+
+        &.input-disabled {
+            color: #BDBDBD;
+        }
+
+    }
+
+    &__outline {
+        border: 2px solid #C4C4C4;
+        display: flex;
+        align-items: center;
+        height: 40px;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        padding: 0 10px;
+        width: 274px;
+        cursor: text;
+        position: relative;
+        border-radius: 7px;
+
+        &:focus-within:not(.input-disabled) {
+            border-color: #f2a705;
+        }
+
+        &:has(.input-invalid) {
+            border-color: #D32F2F;
+        }
+
+        &:focus-within:has(.input-invalid) {
+            border-color: #D32F2F;
+        }
+    }
+
+    &__field {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        width: 100%;
+
+    }
+
+    &__field.initial-password {
+        width: 232px;
+        margin-right: 2px;
+    }
+
+    &__field.input-disabled {
+        border-color: #BDBDBD;
+    }
+
+    &__field:-webkit-autofill,
+    &__field:-webkit-autofill:hover,
+    &__field:-webkit-autofill:focus,
+    &__field:-webkit-autofill:active {
+        color: black !important;
+        -webkit-text-fill-color: black !important;
+        -webkit-box-shadow: 0 0 0 1000px white inset !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+    }
+
+    &__field:-webkit-autofill::first-line {
+        font-size: 18px;
+    }
+
+    &__error-wrapper {
+        min-height: 28px;
+    }
+
+    &__error {
+        color: #D32F2F;
+        font-size: 16px;
+    }
+
+    &__visibility-btn {
+        height: auto;
+        display: block;
+        padding: 0;
+        margin: 0;
+        border-radius: 100%;
+        border: none;
+        background-color: transparent;
+
+        &:hover:not(:disabled) {
+            background: #c4c4c4ae;
+            outline: none;
+        }
+
+        &:focus:not(:disabled) {
+            outline: none;
+            background: #c4c4c4ae;
+        }
+
+        &:active:not(:disabled) {
+            background: #c4c4c47c;
+        }
+    }
+
+    &__visibility-icon {
+        width: 26px;
+        height: auto;
+        display: block;
+    }
+}

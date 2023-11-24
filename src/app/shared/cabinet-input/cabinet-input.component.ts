@@ -6,7 +6,12 @@ import { FormControl, ReactiveFormsModule } from '@angular/forms';
   selector: 'app-cabinet-input',
   templateUrl: './cabinet-input.component.html',
   styleUrls: ['./cabinet-input.component.scss'],
-  imports: [NgClass, NgFor, CommonModule, ReactiveFormsModule],
+  imports: [
+    NgClass,
+    NgFor,
+    CommonModule,
+    ReactiveFormsModule,
+  ],
   standalone: true,
 })
 export class CabinetInputComponent {
