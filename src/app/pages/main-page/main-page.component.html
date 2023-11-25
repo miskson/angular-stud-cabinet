@@ -1,24 +1,53 @@
-<main class="main-page">
-    <aside>
-        <a routerLink="general-info">General Info</a>
-        <br>
-        <a routerLink="recordsbook">Recordsbook</a>
-        <br>
-        <a routerLink="rating">Rating</a>
-        <br>
-        <a routerLink="student-debt">Student's Debt</a>
-        <br>
-        <a routerLink="study-schedule">Study Schedule</a>
-        <br>
-        <a routerLink="sports-schedule">Sports Schedule</a>
-        <br>
-        <a routerLink="study-plan">Study Plan</a>
-        <br>
-        <a routerLink="payment">Study Payment</a>
-        <br>
-        <app-cabinet-button displayType="secondary" (onClick)="logOut()">Log-out</app-cabinet-button>
+<main class="main-page" [ngClass]="{ 'sidebar-active': isSidebarActive }">
+    <aside class="main-page__sidebar">
+        <ul class="main-page__sidebar-list">
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="general-info">General Info</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="recordsbook">Recordsbook</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="rating">Rating</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="student-debt">Academic Debt</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="study-schedule">Study Schedule</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="sports-schedule">Sports Schedule</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="study-plan">Study Plan</a>
+            </li>
+            <li class="main-page__sidebar-list-item">
+                <a class="main-page__sidebar-list-link" routerLink="payment">Study Payment</a>
+            </li>
+        </ul>
     </aside>
     <div class="main-page__content-wrapper">
-        <router-outlet></router-outlet>
+        <header class="main-page__header">
+            <div class="main-page__header-info">
+                <button (click)="toggleSidebar()" class="main-page__header-sidebar-btn">
+                    <img class="main-page__header-sidebar-btn-icon" [src]="
+              isSidebarActive
+                ? 'assets/icons/back-arrow.svg'
+                : 'assets/icons/burger-menu.svg'
+            " alt="Toggle Sidebar" />
+                </button>
+                <div class="main-page__header-username">
+                    <sup>Logged as:</sup>
+                    <h3>{{data.studentName}} {{data.studentSurname}}</h3>
+                    <sub>{{data.studentEmail}}</sub>
+                </div>
+            </div>
+            <app-cabinet-button class="main-page__header-logout-btn" displayType="secondary"
+                (onClick)="logOut()">Log-out</app-cabinet-button>
+        </header>
+        <div class="main-page__content">
+            <router-outlet></router-outlet>
+        </div>
     </div>
 </main>
