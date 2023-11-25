@@ -10,6 +10,12 @@ import { Router } from '@angular/router';
 export class MainPageComponent {
   constructor(private http: HttpClient, private router: Router) {}
 
+  isSidebarActive: boolean = true;
+
+  toggleSidebar() {
+    this.isSidebarActive = !this.isSidebarActive;
+  }
+
   logOut() {
     sessionStorage.clear();
     this.router.navigate(['login']);

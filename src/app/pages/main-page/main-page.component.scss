@@ -1,12 +1,53 @@
 .main-page {
     display: flex;
+    box-sizing: border-box;
     border: 1px solid black;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100vh;
+
+    &__sidebar {
+        box-sizing: border-box;
+        min-width: 200px;
+        height: 100%;
+        background-color: #c4c4c47c;
+        transform: translateX(-200px);
+        transition: transform 0.2s ease-in-out;
+    }
+
     &__content-wrapper {
         border: 1px solid red;
+        padding: 0;
+        margin: 0;
+        flex-grow: 1;
+        margin-left: -200px;
+        transition: margin-left 0.2s ease-in-out;
+    }
+
+    &__header {
+        display: flex;
         width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px #ccc;
+
+        &__username {
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+
+    &.sidebar-active {
+        .main-page__sidebar {
+            transform: translateX(0);
+        }
+
+        .main-page__content-wrapper {
+            margin-left: 0;
+        }
     }
 }

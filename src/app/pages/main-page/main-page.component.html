@@ -1,5 +1,6 @@
-<main class="main-page">
-    <aside>
+<main class="main-page" [ngClass]="{'sidebar-active': isSidebarActive}">
+    <aside class="main-page__sidebar">
+        <br>
         <a routerLink="general-info">General Info</a>
         <br>
         <a routerLink="recordsbook">Recordsbook</a>
@@ -16,9 +17,16 @@
         <br>
         <a routerLink="payment">Study Payment</a>
         <br>
-        <app-cabinet-button displayType="secondary" (onClick)="logOut()">Log-out</app-cabinet-button>
     </aside>
     <div class="main-page__content-wrapper">
+        <header class="main-page__header">
+            <div class="main-page__header-info">
+                <button (click)="toggleSidebar()" class="main-page__header-sidebar-btn">close</button>
+                <h3 class="main-page__header-username">User name</h3>
+            </div>
+            <app-cabinet-button class="main-page__header-logout-btn" displayType="secondary"
+                (onClick)="logOut()">Log-out</app-cabinet-button>
+        </header>
         <router-outlet></router-outlet>
     </div>
 </main>
