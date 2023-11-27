@@ -1,14 +1,13 @@
 .main-page {
     display: flex;
     box-sizing: border-box;
-    border: 1px solid black;
-    height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
 
     &__sidebar {
+        z-index: 1;
         box-sizing: border-box;
         padding-top: 24px;
         min-width: 250px;
@@ -65,18 +64,15 @@
         margin-left: -250px;
         transition: margin-left 0.2s ease-in-out;
         background-color: #F2F0F7;
-    }
-
-    &__content {
-        padding: 8px;
-        border: 1px solid red;
-        width: 100%;
-        // height: calc(100% - 5sem);
-        margin: 0;
         box-sizing: border-box;
+        height: inherit;
+        border: 1px solid purple;
+        overflow: auto;
     }
 
     &__header {
+        position: sticky;
+        top: 0;
         display: flex;
         width: 100%;
         justify-content: space-between;
@@ -138,7 +134,18 @@
         display: block;
     }
 
+    &__content {
+        padding: 8px;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+
     &.sidebar-active {
+        transition: 0.1s;
+
         .main-page__sidebar {
             transform: translateX(0);
             box-shadow: 2px 0px 4px #ccc;

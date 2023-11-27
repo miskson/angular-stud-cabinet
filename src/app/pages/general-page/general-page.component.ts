@@ -9,13 +9,13 @@ import { DataService } from 'src/app/services/data/data.service';
 export class GeneralPageComponent {
   constructor(private dataService: DataService) {}
 
-  data = {};
+  data: any = {};
   email: string | null = sessionStorage.getItem('email');
 
   getGeneralInfoByEmail(email: string) {
     this.dataService.getStudentGeneralInfoByEmail(email as string).subscribe(
       (res) => {
-        this.data = res;
+        this.data = res[0];
       },
       (err) => {
         console.error(err, 'Request Error');
