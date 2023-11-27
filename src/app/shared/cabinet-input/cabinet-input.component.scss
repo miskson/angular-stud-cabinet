@@ -16,6 +16,7 @@
 
     &__outline {
         border: 2px solid #C4C4C4;
+        background-color: #fff;
         display: flex;
         align-items: center;
         height: 40px;
@@ -41,7 +42,7 @@
     }
 
     &__field {
-        background-color: transparent;
+        background-color: #fff;
         border: none;
         outline: none;
         font-size: 18px;
