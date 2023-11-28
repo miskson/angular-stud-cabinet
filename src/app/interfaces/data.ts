@@ -48,7 +48,7 @@ export interface StudentPayment {
   currency: string;
   paymentDateString: string;
   paymentDateISO: string;
-  semester: string;
+  semester: number;
   contractNumber: string;
   contractISOdate: string;
   contractDateString: string;
@@ -80,12 +80,14 @@ export interface StudentRecordsbook {
 // --- STUDENT RATING INTERFACES
 export interface StudentRatingPlace {
   name: string;
+  ownerEmail: string;
   group: string;
-  averageMark: string;
-  rating: string;
+  averageMark: number;
+  averageMarkNat: number;
+  rating: number;
 }
 
-export type StudentRatingSortType = 'asc' | 'desc';
+export type SortTypes = 'asc' | 'desc';
 
 // --- STUDENT DEBTS INTERFACES
 interface StudentDebtSubjectList {

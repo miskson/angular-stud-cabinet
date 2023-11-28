@@ -333,7 +333,7 @@
       "currency": "UAH",
       "paymentDateString": "17.11.2023",
       "paymentDateISO": "2023-11-17T14:48:00.000Z",
-      "semester": "11",
+      "semester": 11,
       "contractNumber": "1337",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
@@ -345,7 +345,7 @@
       "currency": "UAH",
       "paymentDateString": "03.10.2022",
       "paymentDateISO": "2023-10-03T14:48:00.000Z",
-      "semester": "9",
+      "semester": 9,
       "contractNumber": "1337",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
@@ -357,7 +357,7 @@
       "currency": "UAH",
       "paymentDateString": "04.05.2023",
       "paymentDateISO": "2023-05-04T14:48:00.000Z",
-      "semester": "10",
+      "semester": 10,
       "contractNumber": "1337",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
@@ -369,7 +369,7 @@
       "currency": "UAH",
       "paymentDateString": "-",
       "paymentDateISO": "-",
-      "semester": "11",
+      "semester": 11,
       "contractNumber": "1234",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
@@ -381,7 +381,7 @@
       "currency": "UAH",
       "paymentDateString": "-",
       "paymentDateISO": "-",
-      "semester": "10",
+      "semester": 10,
       "contractNumber": "1234",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
@@ -393,7 +393,7 @@
       "currency": "UAH",
       "paymentDateString": "-",
       "paymentDateISO": "-",
-      "semester": "9",
+      "semester": 9,
       "contractNumber": "1234",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
@@ -676,33 +676,66 @@
   "StudentRatingList": [
     {
       "name": "John Doe",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
       "group": "CS-M922c",
-      "averageMark": "3",
-      "rating": "5"
+      "averageMark": 62.45,
+      "averageMarkNat": 3.6,
+      "semester": 12,
+      "rating": 5
     },
     {
       "name": "Sarah Connor",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
       "group": "CS-M922b",
-      "averageMark": "5",
-      "rating": "1"
+      "averageMark": 91.67,
+      "averageMarkNat": 5,
+      "semester": 12,
+      "rating": 1
     },
     {
       "name": "Joe Bidon",
+      "ownerEmail": "joe.bidon@cit.khpi.edu.ua",
       "group": "CS-M922a",
-      "averageMark": "4.5",
-      "rating": "2"
+      "averageMark": 76.14,
+      "averageMarkNat": 4.29,
+      "semester": 12,
+      "rating": 3
+    },
+    {
+      "name": "Sarah Zuckerberg",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "group": "CS-M922b",
+      "averageMark": 59.5,
+      "averageMarkNat": 3.33,
+      "semester": 12,
+      "rating": 6
+    },
+    {
+      "name": "Dimytro Kravchenko",
+      "ownerEmail": "joe.bidon@cit.khpi.edu.ua",
+      "group": "CS-M922a",
+      "averageMark": 59.36,
+      "averageMarkNat": 3,
+      "semester": 12,
+      "rating": 7
     },
     {
       "name": "Mykola Parasyuk",
+      "ownerEmail": "mykola.parasyuk@cit.khpi.edu.ua",
       "group": "CS-M922a",
-      "averageMark": "4",
-      "rating": "3"
+      "averageMark": 80.94,
+      "averageMarkNat": 4.86,
+      "semester": 12,
+      "rating": 2
     },
     {
       "name": "Viktor Zahl",
+      "ownerEmail": "viktor.zahl@cit.khpi.edu.ua",
       "group": "CS-M922a",
-      "averageMark": "3.1",
-      "rating": "4"
+      "averageMark": 65.52,
+      "averageMarkNat": 3.86,
+      "semester": 12,
+      "rating": 4
     }
   ],
   "StudentAcademicDebt": [
