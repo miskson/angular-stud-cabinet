@@ -335,29 +335,32 @@
       "paymentDateISO": "2023-11-17T14:48:00.000Z",
       "semester": "11",
       "contractNumber": "1337",
-      "contractISOdate": "2022-09-01T14:48:00.000Z"
+      "contractISOdate": "2022-09-01T14:48:00.000Z",
+      "contractDateString": "01.09.2022"
     },
     {
       "ownerId": "1",
       "ownerEmail": "john.doe@cit.khpi.edu.ua",
-      "amount": "17900",
-      "currency": "UAH",
-      "paymentDateString": "04.05.2023",
-      "paymentDateISO": "2023-05-04T14:48:00.000Z",
-      "semester": "10",
-      "contractNumber": "1337",
-      "contractISOdate": "2022-09-01T14:48:00.000Z"
-    },
-    {
-      "ownerId": "1",
-      "ownerEmail": "john.doe@cit.khpi.edu.ua",
-      "amount": "17900",
+      "amount": "17700",
       "currency": "UAH",
       "paymentDateString": "03.10.2022",
       "paymentDateISO": "2023-10-03T14:48:00.000Z",
       "semester": "9",
       "contractNumber": "1337",
-      "contractISOdate": "2022-09-01T14:48:00.000Z"
+      "contractISOdate": "2022-09-01T14:48:00.000Z",
+      "contractDateString": "01.09.2022"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "amount": "17800",
+      "currency": "UAH",
+      "paymentDateString": "04.05.2023",
+      "paymentDateISO": "2023-05-04T14:48:00.000Z",
+      "semester": "10",
+      "contractNumber": "1337",
+      "contractISOdate": "2022-09-01T14:48:00.000Z",
+      "contractDateString": "01.09.2022"
     },
     {
       "ownerId": "2",
@@ -368,7 +371,8 @@
       "paymentDateISO": "-",
       "semester": "11",
       "contractNumber": "1234",
-      "contractISOdate": "2022-09-01T14:48:00.000Z"
+      "contractISOdate": "2022-09-01T14:48:00.000Z",
+      "contractDateString": "01.09.2022"
     },
     {
       "ownerId": "2",
@@ -379,7 +383,8 @@
       "paymentDateISO": "-",
       "semester": "10",
       "contractNumber": "1234",
-      "contractISOdate": "2022-09-01T14:48:00.000Z"
+      "contractISOdate": "2022-09-01T14:48:00.000Z",
+      "contractDateString": "01.09.2022"
     },
     {
       "ownerId": "2",
@@ -390,7 +395,8 @@
       "paymentDateISO": "-",
       "semester": "9",
       "contractNumber": "1234",
-      "contractISOdate": "2022-09-01T14:48:00.000Z"
+      "contractISOdate": "2022-09-01T14:48:00.000Z",
+      "contractDateString": "01.09.2022"
     }
   ],
   "studentRecordsbook": [

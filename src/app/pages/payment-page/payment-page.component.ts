@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StudentPayment } from 'src/app/interfaces/data';
 import { DataService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { DataService } from 'src/app/services/data/data.service';
 export class PaymentPageComponent {
   constructor(private dataService: DataService) {}
 
-  data = {};
+  data: StudentPayment[] | [] = [];
   email: string | null = sessionStorage.getItem('email');
 
   getStudentPaymentsByEmail(email: string) {

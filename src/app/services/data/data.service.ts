@@ -37,9 +37,11 @@ export class DataService {
 
   getStudentPaymentInfoByEmail(email: string): Observable<StudentPayment[]> {
     return this.http.get<StudentPayment[]>(
-      `${this.baseUrl}/studentPayments?ownerEmail=${email}`
+      `${this.baseUrl}/studentPayments?ownerEmail=${email}&_sort=semester&_order=asc`
     );
   }
+
+  // http://localhost:3000/studentPayments?ownerEmail=john.doe@cit.khpi.edu.ua&_sort=semester&_order=asc
 
   getStudentRecordsbookByEmail(
     email: string
