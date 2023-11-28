@@ -1,26 +1,45 @@
 <section class="payment-page">
-    <div class="widget-card">
-        <h2 class="payment-page__title">
-            Study Payment
-            <div class="payment-page__title-icon">
-                <img src="assets/icons/money-icon.svg" alt="" />
+  <div class="widget-card">
+    <h2 class="payment-page__title">
+      Study Payment
+      <div class="payment-page__title-icon">
+        <img src="assets/icons/money-icon.svg" alt="" />
+      </div>
+    </h2>
+    <table class="payment-page__table">
+      <tr class="payment-page__table-title-row">
+        <th class="payment-page__table-title">Contract</th>
+        <th class="payment-page__table-title">Contract Date</th>
+        <th class="payment-page__table-title">
+          Semester
+          <button
+            class="payment-page__table-title-btn"
+            (click)="toggleSortTypeAndSort()"
+          >
+            <div class="payment-page__table-title-icon">
+              <img src="assets/icons/sort-icon.svg" alt="sort" />
             </div>
-        </h2>
-        <table class="payment-page__table">
-            <tr class="payment-page__table-title-row">
-                <th class="payment-page__table-title">Contract</th>
-                <th class="payment-page__table-title">Contract Date</th>
-                <th class="payment-page__table-title">Semester</th>
-                <th class="payment-page__table-title">Amount</th>
-                <th class="payment-page__table-title">Payment Date</th>
-            </tr>
-            <tr class="payment-page__table-data-row" *ngFor="let payment of data; index as i">
-                <td class="payment-page__table-data">{{payment.contractNumber}}</td>
-                <td class="payment-page__table-data">{{payment.contractDateString}}</td>
-                <td class="payment-page__table-data">{{payment.semester}}</td>
-                <td class="payment-page__table-data">{{payment.amount}} {{payment.currency}}</td>
-                <td class="payment-page__table-data">{{payment.paymentDateString}}</td>
-            </tr>
-        </table>
-    </div>
+          </button>
+        </th>
+        <th class="payment-page__table-title">Amount</th>
+        <th class="payment-page__table-title">Payment Date</th>
+      </tr>
+      <tr
+        class="payment-page__table-data-row"
+        *ngFor="let payment of data; index as i"
+      >
+        <td class="payment-page__table-data">{{ payment.contractNumber }}</td>
+        <td class="payment-page__table-data">
+          {{ payment.contractDateString }}
+        </td>
+        <td class="payment-page__table-data">{{ payment.semester }}</td>
+        <td class="payment-page__table-data">
+          {{ payment.amount }} {{ payment.currency }}
+        </td>
+        <td class="payment-page__table-data">
+          {{ payment.paymentDateString }}
+        </td>
+      </tr>
+    </table>
+  </div>
 </section>
