@@ -51,6 +51,7 @@ export interface StudentPayment {
   semester: string;
   contractNumber: string;
   contractISOdate: string;
+  contractDateString: string;
 }
 
 // --- RECORDSBOOK INTERFACES
