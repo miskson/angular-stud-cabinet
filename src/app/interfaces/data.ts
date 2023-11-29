@@ -89,8 +89,9 @@ export interface StudentRatingPlace {
 
 export type SortTypes = 'asc' | 'desc';
 
-// --- STUDENT DEBTS INTERFACES
-interface StudentDebtSubjectList {
+export interface StudentDebtInfo {
+  ownerId: string;
+  ownerEmail: string;
   subject: string;
   controlType: string;
   credit: string;
@@ -99,12 +100,6 @@ interface StudentDebtSubjectList {
   department: string;
   departmentAbr: string;
   lecturer: string;
-}
-
-export interface StudentDebtInfo {
-  ownerId: string;
-  ownerEmail: string;
-  debts: StudentDebtSubjectList[];
 }
 
 // --- STUDY SCHEDULE INTERFACES

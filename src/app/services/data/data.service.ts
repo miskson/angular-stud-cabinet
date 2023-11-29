@@ -61,9 +61,12 @@ export class DataService {
     );
   }
 
-  getStudentDebtsByEmail(email: string): Observable<StudentDebtInfo[]> {
+  getStudentDebtsByEmail(
+    email: string,
+    sort: SortTypes = 'desc'
+  ): Observable<StudentDebtInfo[]> {
     return this.http.get<StudentDebtInfo[]>(
-      `${this.baseUrl}/StudentAcademicDebt?ownerEmail=${email}`
+      `${this.baseUrl}/StudentAcademicDebt?ownerEmail=${email}&_sort=semester&_order=${sort}`
     );
   }
 

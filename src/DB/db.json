@@ -742,44 +742,38 @@
     {
       "ownerId": "1",
       "ownerEmail": "john.doe@cit.khpi.edu.ua",
-      "debts": [
-        {
-          "subject": "Military Training",
-          "controlType": "-",
-          "credit": "4.00",
-          "semester": 8,
-          "year": 4,
-          "department": "Military Department",
-          "departmentAbr": "MilD",
-          "lecturer": "-"
-        },
-        {
-          "subject": "Advanced Mathematics",
-          "controlType": "Exam",
-          "credit": "4.00",
-          "semester": 4,
-          "year": 2,
-          "department": "Mathematics Department",
-          "departmentAbr": "MD",
-          "lecturer": "Chikina N.A."
-        }
-      ]
+      "subject": "Military Training",
+      "controlType": "-",
+      "credit": "4.00",
+      "semester": 8,
+      "year": 4,
+      "department": "Military Department",
+      "departmentAbr": "MilD",
+      "lecturer": "-"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "subject": "Advanced Mathematics",
+      "controlType": "Exam",
+      "credit": "4.00",
+      "semester": 4,
+      "year": 2,
+      "department": "Mathematics Department",
+      "departmentAbr": "MD",
+      "lecturer": "Chikina N.A."
     },
     {
       "ownerId": "1",
       "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
-      "debts": [
-        {
-          "subject": "Physical Education",
-          "controlType": "credit",
-          "credit": "4.00",
-          "semester": 7,
-          "year": 4,
-          "department": "Sports Department",
-          "departmentAbr": "SD",
-          "lecturer": "Kazak V.Y."
-        }
-      ]
+      "subject": "Physical Education",
+      "controlType": "credit",
+      "credit": "4.00",
+      "semester": 7,
+      "year": 4,
+      "department": "Sports Department",
+      "departmentAbr": "SD",
+      "lecturer": "Kazak V.Y."
     }
   ],
   "StudentStudySchedule": [
