@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { StudentRatingSortType } from 'src/app/interfaces/data';
+import {
+  SortTypes,
+  StudentRatingPlace,
+} from 'src/app/interfaces/data';
 import { DataService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -10,12 +13,20 @@ import { DataService } from 'src/app/services/data/data.service';
 export class RatingPageComponent {
   constructor(private dataService: DataService) {}
 
-  data = {};
-  sortType: StudentRatingSortType = 'asc';
+  data: StudentRatingPlace[] | [] = [];
 
-  getSortedStudentRating(sortType: StudentRatingSortType) {
+  userEmail: string | null = sessionStorage.getItem('email');
+
+  sortType: SortTypes = 'asc';
+
+  toggleSortTypeAndSort(): void {
+    this.sortType = this.sortType === 'asc' ? 'desc' : 'asc';
+    this.getSortedStudentRating(this.sortType as SortTypes);
+  }
+
+  getSortedStudentRating(sortType: SortTypes) {
     this.dataService
-      .getSortedStudentsByRating(sortType as StudentRatingSortType)
+      .getSortedStudentsByRating(sortType as SortTypes)
       .subscribe(
         (res) => {
           this.data = res;
@@ -27,6 +38,6 @@ export class RatingPageComponent {
   }
 
   ngOnInit(): void {
-    this.getSortedStudentRating(this.sortType as StudentRatingSortType);
+    this.getSortedStudentRating(this.sortType as SortTypes);
   }
 }

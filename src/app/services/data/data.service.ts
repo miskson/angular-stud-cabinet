@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/app/environments/environment/environment';
 import {
+  SortTypes,
   SportScheduleInfo,
   StudentDebtInfo,
   StudentGeneralInfo,
@@ -35,13 +36,14 @@ export class DataService {
     );
   }
 
-  getStudentPaymentInfoByEmail(email: string): Observable<StudentPayment[]> {
+  getStudentPaymentInfoByEmail(
+    email: string,
+    sort: SortTypes = 'desc'
+  ): Observable<StudentPayment[]> {
     return this.http.get<StudentPayment[]>(
-      `${this.baseUrl}/studentPayments?ownerEmail=${email}&_sort=semester&_order=asc`
+      `${this.baseUrl}/studentPayments?ownerEmail=${email}&_sort=semester&_order=${sort}`
     );
   }
-
-  // http://localhost:3000/studentPayments?ownerEmail=john.doe@cit.khpi.edu.ua&_sort=semester&_order=asc
 
   getStudentRecordsbookByEmail(
     email: string
