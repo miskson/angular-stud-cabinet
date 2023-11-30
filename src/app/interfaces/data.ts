@@ -103,8 +103,20 @@ export interface StudentDebtInfo {
 }
 
 // --- STUDY SCHEDULE INTERFACES
-interface SubjectsScheduleInfo {
+
+export type WeekDay =
+  | 'monday'
+  | 'tuesday'
+  | 'wednesday'
+  | 'thursday'
+  | 'friday'
+  | 'saturday'
+  | 'sunday';
+
+export interface SubjectsScheduleInfo {
+  day: WeekDay;
   classTime: number;
+  classTimeString: string;
   auditory: string;
   subject: string;
   classType: string;
@@ -114,13 +126,7 @@ interface SubjectsScheduleInfo {
 export interface StudentStudySchedule {
   ownerId: string;
   ownerEmail: string;
-  monday: SubjectsScheduleInfo[];
-  tuesday: SubjectsScheduleInfo[];
-  wednesday: SubjectsScheduleInfo[];
-  thursday: SubjectsScheduleInfo[];
-  friday: SubjectsScheduleInfo[];
-  saturday: SubjectsScheduleInfo[];
-  sunday: SubjectsScheduleInfo[];
+  days: SubjectsScheduleInfo[];
 }
 
 // --- SPORTS SCHEDULE INTERFACES
