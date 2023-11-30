@@ -1,2 +1,44 @@
-<h2>Study Plan</h2>
-{{data | json}}
+<section class="studyplan-page">
+    <div class="widget-card">
+      <h2 class="studyplan-page__title">
+        Study Plan
+        <div class="studyplan-page__title-icon">
+          <img src="assets/icons/bookmark-icon.svg" alt="" />
+        </div>
+      </h2>
+      <table class="studyplan-page__table">
+        <tr class="studyplan-page__table-title-row">
+          <th class="studyplan-page__table-title">Department</th>
+          <th class="studyplan-page__table-title">Subject</th>
+          <th class="studyplan-page__table-title">Year</th>
+          <th class="studyplan-page__table-title">Semester</th>
+          <th class="studyplan-page__table-title">Contol</th>
+          <th class="studyplan-page__table-title">Hours</th>
+          <th class="studyplan-page__table-title">Credit</th>
+        </tr>
+        <!-- <tr
+            class="studyplan-page__table-data-row"
+            *ngFor="let debt of data; index as i"
+          >
+            <td class="studyplan-page__table-data">
+              {{ debt.department }} [{{ debt.departmentAbr }}]
+            </td>
+            <td class="studyplan-page__table-data">
+              <strong>{{ debt.subject }}</strong>
+              <sub class="studyplan-page__table-data-subtitle"
+                >Lecturer: <strong>{{ debt.lecturer }}</strong></sub
+              >
+            </td>
+            <td class="studyplan-page__table-data">
+              {{ debt.year }}
+            </td>
+            <td class="studyplan-page__table-data">{{ debt.semester }}</td>
+            <td class="studyplan-page__table-data">
+              {{ debt.controlType }}
+            </td>
+          </tr> -->
+      </table>
+      {{ data | json }}
+    </div>
+  </section>
+  
