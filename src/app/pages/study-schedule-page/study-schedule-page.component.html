@@ -1,2 +1,53 @@
-<h2>Study Schedule</h2>
-{{data | json}}
+<section class="studyschedule-page">
+  <div class="widget-card">
+    <h2 class="studyschedule-page__title">
+      Study Schedule
+      <div class="studyschedule-page__title-icon">
+        <img src="assets/icons/calendar-icon.svg" alt="" />
+      </div>
+      <div class="studyschedule-page__title-icon">
+        <img src="assets/icons/books-icon.svg" alt="" />
+      </div>
+    </h2>
+
+    <div
+      class="studyschedule-page__table-wrapper widget-card"
+      *ngFor="let day of weekDays"
+    >
+      <h3>
+        <div class="studyschedule-page__subtitle-icon">
+          <img src="assets/icons/clock-icon.svg" alt="" />
+        </div>
+        {{ day[0].toUpperCase() + day.substring(1) }}
+      </h3>
+      <table class="studyschedule-page__table">
+        <tr class="studyschedule-page__table-title-row">
+          <th class="studyschedule-page__table-title">Time</th>
+          <th class="studyschedule-page__table-title">Subject</th>
+          <th class="studyschedule-page__table-title">Type</th>
+          <th class="studyschedule-page__table-title">Classroom</th>
+        </tr>
+        <tr
+          class="studyschedule-page__table-data-row"
+          *ngFor="let shcedule of getSortedDataByClassTime(getFilteredDataByDay(day))"
+        >
+          <td class="studyschedule-page__table-data">
+            {{ shcedule.classTimeString }}
+          </td>
+          <td class="studyschedule-page__table-data">
+            <strong>{{ shcedule.subject }}</strong>
+            <sub class="studyschedule-page__table-data-subtitle"
+              >Lecturer: <strong>{{ shcedule.lecturer }}</strong></sub
+            >
+          </td>
+          <td class="studyschedule-page__table-data">
+            {{ shcedule.classType }}
+          </td>
+          <td class="studyschedule-page__table-data">
+            {{ shcedule.auditory }}
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>

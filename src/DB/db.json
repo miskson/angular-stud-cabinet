@@ -780,454 +780,548 @@
     {
       "ownerId": "1",
       "ownerEmail": "john.doe@cit.khpi.edu.ua",
-      "monday": [
+      "days": [
         {
+          "day": "monday",
           "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         }
-      ],
-      "tuesday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "wednesday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "thursday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "friday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "saturday": [],
-      "sunday": []
+      ]
     },
     {
       "ownerId": "2",
       "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
-      "monday": [
+      "days": [
         {
+          "day": "monday",
           "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         },
         {
+          "day": "monday",
           "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "tuesday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "wednesday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "thursday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 1,
+          "classTimeString": "8:30 - 10:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 2,
+          "classTimeString": "10:25 - 12:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 3,
+          "classTimeString": "12:35 - 14:10",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 4,
+          "classTimeString": "14:30 - 16:05",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 5,
+          "classTimeString": "16:25 - 18:00",
+          "auditory": "111",
+          "subject": "Math",
+          "classType": "practice",
+          "lecturer": "Chikina N.A."
+        },
+        {
+          "day": "friday",
+          "classTime": 6,
+          "classTimeString": "18:10 - 19:45",
           "auditory": "111",
           "subject": "Math",
           "classType": "practice",
           "lecturer": "Chikina N.A."
         }
-      ],
-      "tuesday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "wednesday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "thursday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "friday": [
-        {
-          "classTime": 1,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 2,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 3,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 4,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 5,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        },
-        {
-          "classTime": 6,
-          "auditory": "111",
-          "subject": "Math",
-          "classType": "practice",
-          "lecturer": "Chikina N.A."
-        }
-      ],
-      "saturday": [],
-      "sunday": []
+      ]
     }
   ],
   "SportsList": ["Boxing", "Wrestling", "Basketball"],

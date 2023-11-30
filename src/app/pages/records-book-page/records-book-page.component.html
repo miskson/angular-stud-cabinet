@@ -1,2 +1,42 @@
-<h2>Recordsbook</h2>
-{{data | json}}
+<section class="recordsbook-page">
+  <div class="widget-card">
+    <h2 class="recordsbook-page__title">
+      Recordsbook
+      <div class="recordsbook-page__title-icon">
+        <img src="assets/icons/book-icon.svg" alt="" />
+      </div>
+    </h2>
+    <table class="recordsbook-page__table">
+      <tr class="recordsbook-page__table-title-row">
+        <th class="recordsbook-page__table-title">Department</th>
+        <th class="recordsbook-page__table-title">Subject</th>
+        <th class="recordsbook-page__table-title">Control</th>
+        <th class="recordsbook-page__table-title">Mark Nat.</th>
+        <th class="recordsbook-page__table-title">Mark</th>
+        <th class="recordsbook-page__table-title">ECTS</th>
+      </tr>
+      <!-- <tr
+          class="recordsbook-page__table-data-row"
+          *ngFor="let debt of data; index as i"
+        >
+          <td class="recordsbook-page__table-data">
+            {{ debt.department }} [{{ debt.departmentAbr }}]
+          </td>
+          <td class="recordsbook-page__table-data">
+            <strong>{{ debt.subject }}</strong>
+            <sub class="recordsbook-page__table-data-subtitle"
+              >Lecturer: <strong>{{ debt.lecturer }}</strong></sub
+            >
+          </td>
+          <td class="recordsbook-page__table-data">
+            {{ debt.year }}
+          </td>
+          <td class="recordsbook-page__table-data">{{ debt.semester }}</td>
+          <td class="recordsbook-page__table-data">
+            {{ debt.controlType }}
+          </td>
+        </tr> -->
+    </table>
+    {{ data | json }}
+  </div>
+</section>
