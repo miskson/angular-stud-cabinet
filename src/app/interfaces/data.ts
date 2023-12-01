@@ -116,6 +116,7 @@ export interface StudentStudySchedule {
 export interface SportScheduleInfo {
   day: string;
   classTime: number;
+  classTimeString: string;
   subject: string;
   coach: string;
   building: string;

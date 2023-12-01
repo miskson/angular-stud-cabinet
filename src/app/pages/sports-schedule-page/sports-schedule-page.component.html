@@ -9,39 +9,74 @@
         <img src="assets/icons/lifter-icon.svg" alt="" />
       </div>
     </h2>
-    <table class="sportschedule-page__table">
-      <tr class="sportschedule-page__table-title-row">
-        <th class="sportschedule-page__table-title">Department</th>
-        <th class="sportschedule-page__table-title">Subject</th>
-        <th class="sportschedule-page__table-title">Control</th>
-        <th class="sportschedule-page__table-title">Mark Nat.</th>
-        <th class="sportschedule-page__table-title">Mark</th>
-        <th class="sportschedule-page__table-title">ECTS</th>
-      </tr>
-      <!-- <tr
+    <div
+      class="sportschedule-page__menu"
+      *ngIf="!selectedMenu as value; else elseBlock"
+    >
+      <h3 class="sportschedule-page__subtitle">Subjects:</h3>
+      <ul class="sportschedule-page__menu-list">
+        <li
+          class="sportschedule-page__menu-list-item"
+          *ngFor="let sport of sports"
+          (click)="getSportSchedule($event)"
+        >
+          {{ sport }}
+        </li>
+      </ul>
+    </div>
+    <ng-template #elseBlock>
+      <button
+        (click)="selectedMenu = ''"
+        class="sportschedule-page__go-back-btn"
+      >
+        <img
+          class="sportschedule-page__go-back-btn-icon"
+          src="assets/icons/back-arrow.svg"
+          alt="<"
+        />
+        <span class="sportschedule-page__go-back-btn-text">Go back</span>
+      </button>
+      <h3>{{ selectedMenu }}</h3>
+      <div
+        class="sportschedule-page__table-wrapper widget-card"
+        *ngFor="let day of weekDays"
+      >
+        <h3>
+          <div class="sportschedule-page__subtitle-icon">
+            <img src="assets/icons/clock-icon.svg" alt="" />
+          </div>
+          {{ day[0].toUpperCase() + day.substring(1) }}
+        </h3>
+        <table class="sportschedule-page__table">
+          <tr class="sportschedule-page__table-title-row">
+            <th class="sportschedule-page__table-title">Time</th>
+            <th class="sportschedule-page__table-title">Subject</th>
+            <th class="sportschedule-page__table-title">Building</th>
+          </tr>
+          <tr
             class="sportschedule-page__table-data-row"
-            *ngFor="let debt of data; index as i"
+            *ngFor="
+              let schedule of getSortedDataByClassTime(
+                getFilteredDataByDay(day)
+              )
+            "
           >
             <td class="sportschedule-page__table-data">
-              {{ debt.department }} [{{ debt.departmentAbr }}]
+              {{ schedule.classTimeString }}
             </td>
             <td class="sportschedule-page__table-data">
-              <strong>{{ debt.subject }}</strong>
+              <strong>{{ schedule.subject }}</strong>
               <sub class="sportschedule-page__table-data-subtitle"
-                >Lecturer: <strong>{{ debt.lecturer }}</strong></sub
+                >Coach: <strong>{{ schedule.coach }}</strong></sub
               >
             </td>
             <td class="sportschedule-page__table-data">
-              {{ debt.year }}
+              {{ schedule.building }}
             </td>
-            <td class="sportschedule-page__table-data">{{ debt.semester }}</td>
-            <td class="sportschedule-page__table-data">
-              {{ debt.controlType }}
-            </td>
-          </tr> -->
-    </table>
-    {{ data | json }}
-    <br />
-    {{ data1 | json }}
+          </tr>
+        </table>
+      </div>
+    </ng-template>
   </div>
+  <br />
 </section>
