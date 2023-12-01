@@ -10,8 +10,8 @@ import {
   StudentGeneralInfo,
   StudentPayment,
   StudentRatingPlace,
-  StudentStudyPlan,
   StudentStudySchedule,
+  StudyPlanSubject,
 } from 'src/app/interfaces/data';
 
 @Injectable({
@@ -30,9 +30,18 @@ export class DataService {
     );
   }
 
-  getStudentStudyPlanByEmail(email: string): Observable<StudentStudyPlan[]> {
-    return this.http.get<StudentStudyPlan[]>(
+  getStudentStudyPlanByEmail(email: string): Observable<StudyPlanSubject[]> {
+    return this.http.get<StudyPlanSubject[]>(
       `${this.baseUrl}/studyPlan?ownerEmail=${email}`
+    );
+  }
+
+  getStudentStudyPlanSemesterByEmail(
+    email: string,
+    semester: number
+  ): Observable<StudyPlanSubject[]> {
+    return this.http.get<StudyPlanSubject[]>(
+      `${this.baseUrl}/studyPlan?ownerEmail=${email}&semester=${semester}`
     );
   }
 

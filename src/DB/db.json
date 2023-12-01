@@ -55,274 +55,278 @@
     {
       "ownerId": "1",
       "ownerEmail": "john.doe@cit.khpi.edu.ua",
-      "semesters": [
-        {
-          "semester": "1",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Corporate networks software",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "year": "1",
-              "semester": "1",
-              "credit": "4.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Economy and Management",
-              "departmentAbr": "EM"
-            },
-            {
-              "name": "Professional foreign language",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            }
-          ]
-        },
-        {
-          "semester": "2",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Corporate networks software",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "year": "1",
-              "semester": "1",
-              "credit": "4.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Economy and Management",
-              "departmentAbr": "EM"
-            },
-            {
-              "name": "Professional foreign language",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            }
-          ]
-        }
-      ]
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "5.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "year": "1",
+      "semester": "1",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Professional foreign language",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "year": "1",
+      "semester": "1",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "year": "1",
+      "semester": "2",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "2",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "year": "1",
+      "semester": "2",
+      "credit": "4.00",
+      "hours": "5.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
     },
     {
       "ownerId": "2",
       "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
-      "semesters": [
-        {
-          "semester": "1",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Corporate networks software",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "year": "1",
-              "semester": "1",
-              "credit": "4.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Economy and Management",
-              "departmentAbr": "EM"
-            },
-            {
-              "name": "Professional foreign language",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            }
-          ]
-        },
-        {
-          "semester": "2",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "5.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Corporate networks software",
-              "year": "1",
-              "semester": "1",
-              "credit": "5.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "year": "1",
-              "semester": "1",
-              "credit": "4.00",
-              "hours": "4.00",
-              "type": "exam",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Economy and Management",
-              "departmentAbr": "EM"
-            },
-            {
-              "name": "Professional foreign language",
-              "year": "1",
-              "semester": "1",
-              "credit": "3.00",
-              "hours": "2.00",
-              "type": "credit",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP"
-            }
-          ]
-        }
-      ]
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "1",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "year": "1",
+      "semester": "1",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Professional foreign language",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "year": "1",
+      "semester": "1",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "name": "Professional foreign language",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "year": "1",
+      "semester": "2",
+      "credit": "3.00",
+      "hours": "3.00"
     }
   ],
   "studentPayments": [
