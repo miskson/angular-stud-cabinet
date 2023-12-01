@@ -374,7 +374,7 @@
       "paymentDateString": "-",
       "paymentDateISO": "-",
       "semester": 11,
-      "contractNumber": "1234",
+      "contractNumber": "-",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
     },
@@ -386,7 +386,7 @@
       "paymentDateString": "-",
       "paymentDateISO": "-",
       "semester": 10,
-      "contractNumber": "1234",
+      "contractNumber": "-",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
     },
@@ -398,7 +398,7 @@
       "paymentDateString": "-",
       "paymentDateISO": "-",
       "semester": 9,
-      "contractNumber": "1234",
+      "contractNumber": "-",
       "contractISOdate": "2022-09-01T14:48:00.000Z",
       "contractDateString": "01.09.2022"
     }
@@ -734,7 +734,7 @@
     },
     {
       "name": "Sarah Zuckerberg",
-      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "ownerEmail": "sarah.zuckerberg@cit.khpi.edu.ua",
       "group": "CS-M922b",
       "averageMark": 59.5,
       "averageMarkNat": 3.33,
