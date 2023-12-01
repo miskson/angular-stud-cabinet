@@ -403,274 +403,301 @@
     {
       "ownerId": "1",
       "ownerEmail": "john.doe@cit.khpi.edu.ua",
-      "semesters": [
-        {
-          "semester": "1",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Dmytrienko V.D.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Corporate networks software",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "-",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "department": "Economy and Management",
-              "departmentAbr": "EM",
-              "type": "credit",
-              "lecturer": "Mehovich S.A.",
-              "grade": "95",
-              "gradeECTS": "A",
-              "gradeNationa": "5"
-            },
-            {
-              "name": "Professional foreign language",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "credit",
-              "lecturer": "Salionovich L.M.",
-              "grade": "70",
-              "gradeECTS": "D",
-              "gradeNationa": "3"
-            }
-          ]
-        },
-        {
-          "semester": "2",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Dmytrienko V.D.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Corporate networks software",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "-",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "department": "Economy and Management",
-              "departmentAbr": "EM",
-              "type": "credit",
-              "lecturer": "Mehovich S.A.",
-              "grade": "95",
-              "gradeECTS": "A",
-              "gradeNationa": "5"
-            },
-            {
-              "name": "Professional foreign language",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "credit",
-              "lecturer": "Salionovich L.M.",
-              "grade": "70",
-              "gradeECTS": "D",
-              "gradeNationa": "3"
-            }
-          ]
-        }
-      ]
+      "semester": "1",
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Dmytrienko V.D.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "-",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "lecturer": "Mehovich S.A.",
+      "grade": "95",
+      "gradeECTS": "A",
+      "gradeNat": "5"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Professional foreign language",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "lecturer": "Salionovich L.M.",
+      "grade": "70",
+      "gradeECTS": "D",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Dmytrienko V.D.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "-",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "1",
+      "ownerEmail": "john.doe@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "lecturer": "Mehovich S.A.",
+      "grade": "95",
+      "gradeECTS": "A",
+      "gradeNat": "5"
     },
     {
       "ownerId": "2",
       "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
-      "semesters": [
-        {
-          "semester": "1",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Dmytrienko V.D.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Corporate networks software",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "-",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "department": "Economy and Management",
-              "departmentAbr": "EM",
-              "type": "credit",
-              "lecturer": "Mehovich S.A.",
-              "grade": "95",
-              "gradeECTS": "A",
-              "gradeNationa": "5"
-            },
-            {
-              "name": "Professional foreign language",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "credit",
-              "lecturer": "Salionovich L.M.",
-              "grade": "70",
-              "gradeECTS": "D",
-              "gradeNationa": "3"
-            }
-          ]
-        },
-        {
-          "semester": "2",
-          "subjects": [
-            {
-              "name": "Decision-making tools and algorithms",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Dmytrienko V.D.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modeling and optimization of computer games content",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Corporate networks software",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "Kozina Ol.An.",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Modern secure programming technologies",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "exam",
-              "lecturer": "-",
-              "grade": "60",
-              "gradeECTS": "E",
-              "gradeNationa": "3"
-            },
-            {
-              "name": "Innovative entrepreneurship and startup project management",
-              "department": "Economy and Management",
-              "departmentAbr": "EM",
-              "type": "credit",
-              "lecturer": "Mehovich S.A.",
-              "grade": "95",
-              "gradeECTS": "A",
-              "gradeNationa": "5"
-            },
-            {
-              "name": "Professional foreign language",
-              "department": "Computer Engineering and Programming",
-              "departmentAbr": "CEP",
-              "type": "credit",
-              "lecturer": "Salionovich L.M.",
-              "grade": "70",
-              "gradeECTS": "D",
-              "gradeNationa": "3"
-            }
-          ]
-        }
-      ]
+      "semester": "1",
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Dmytrienko V.D.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "-",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "lecturer": "Mehovich S.A.",
+      "grade": "95",
+      "gradeECTS": "A",
+      "gradeNat": "5"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "1",
+      "name": "Professional foreign language",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "lecturer": "Salionovich L.M.",
+      "grade": "70",
+      "gradeECTS": "D",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Decision-making tools and algorithms",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Dmytrienko V.D.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Modeling and optimization of computer games content",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Corporate networks software",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "Kozina Ol.An.",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Modern secure programming technologies",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "exam",
+      "lecturer": "-",
+      "grade": "60",
+      "gradeECTS": "E",
+      "gradeNat": "3"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Innovative entrepreneurship and startup project management",
+      "department": "Economy and Management",
+      "departmentAbr": "EM",
+      "type": "credit",
+      "lecturer": "Mehovich S.A.",
+      "grade": "95",
+      "gradeECTS": "A",
+      "gradeNat": "5"
+    },
+    {
+      "ownerId": "2",
+      "ownerEmail": "sarah.connor@cit.khpi.edu.ua",
+      "semester": "2",
+      "name": "Professional foreign language",
+      "department": "Computer Engineering and Programming",
+      "departmentAbr": "CEP",
+      "type": "credit",
+      "lecturer": "Salionovich L.M.",
+      "grade": "70",
+      "gradeECTS": "D",
+      "gradeNat": "3"
     }
   ],
   "StudentRatingList": [

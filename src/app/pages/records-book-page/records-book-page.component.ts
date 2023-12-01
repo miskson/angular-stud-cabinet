@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RecordsbookSubject } from 'src/app/interfaces/data';
 import { DataService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -9,21 +10,30 @@ import { DataService } from 'src/app/services/data/data.service';
 export class RecordsBookPageComponent {
   constructor(private dataService: DataService) {}
 
-  data = {};
+  data: RecordsbookSubject[] | [] = [];
   email: string | null = sessionStorage.getItem('email');
 
-  getStudentRecordsbookInfoByEmail(email: string) {
-    this.dataService.getStudentRecordsbookByEmail(email as string).subscribe(
-      (res) => {
-        this.data = res;
-      },
-      (err) => {
-        console.error(err, 'Request Error');
-      }
+  onSemesterChange(e: any) {
+    this.getStudentRecordsbookSemesterByEmail(
+      this.email as string,
+      e.target.value
     );
   }
 
+  getStudentRecordsbookSemesterByEmail(email: string, semester: number = 1) {
+    this.dataService
+      .getStudentRecordsbookSemesterByEmail(email as string, semester)
+      .subscribe(
+        (res) => {
+          this.data = res;
+        },
+        (err) => {
+          console.error(err, 'Request Error');
+        }
+      );
+  }
+
   ngOnInit(): void {
-    this.getStudentRecordsbookInfoByEmail(this.email as string);
+    this.getStudentRecordsbookSemesterByEmail(this.email as string, 2);
   }
 }

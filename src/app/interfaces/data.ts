@@ -55,7 +55,10 @@ export interface StudentPayment {
 }
 
 // --- RECORDSBOOK INTERFACES
-interface RecordsbookSubject {
+export interface RecordsbookSubject {
+  ownerId: string;
+  ownerEmail: string;
+  semester: number;
   name: string;
   department: string;
   departmentAbr: string;
@@ -63,19 +66,9 @@ interface RecordsbookSubject {
   lecturer: string;
   grade: string;
   gradeECTS: string;
-  gradeNationa: string;
+  gradeNat: string;
 }
 
-interface RecordsbookSemester {
-  semester: string;
-  subjects: RecordsbookSubject[];
-}
-
-export interface StudentRecordsbook {
-  ownerId: string;
-  ownerEmail: string;
-  semesters: RecordsbookSemester[];
-}
 
 // --- STUDENT RATING INTERFACES
 export interface StudentRatingPlace {
