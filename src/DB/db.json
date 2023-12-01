@@ -1360,183 +1360,209 @@
     {
       "day": "monday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "monday",
       "classTime": 2,
+      "classTimeString": "10:25 - 12:00",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "monday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "monday",
       "classTime": 3,
+      "classTimeString": "12:35 - 14:10",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "monday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "monday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "tuesday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "tuesday",
       "classTime": 2,
+      "classTimeString": "10:25 - 12:00",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "tuesday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "tuesday",
       "classTime": 3,
+      "classTimeString": "12:35 - 14:10",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "wednesday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "wednesday",
       "classTime": 3,
+      "classTimeString": "12:35 - 14:10",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "wednesday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "wednesday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "thursday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "thursday",
       "classTime": 2,
+      "classTimeString": "10:25 - 12:00",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "thursday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "thursday",
       "classTime": 3,
+      "classTimeString": "12:35 - 14:10",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "thursday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "thursday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "friday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "friday",
       "classTime": 2,
+      "classTimeString": "10:25 - 12:00",
       "subject": "Boxing",
-      "coach": "Chikina N.A.",
+      "coach": "Balboa R.",
       "building": "complex1"
     },
     {
       "day": "friday",
       "classTime": 1,
+      "classTimeString": "8:30 - 10:05",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     },
     {
       "day": "friday",
       "classTime": 3,
+      "classTimeString": "12:35 - 14:10",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "friday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Wrestling",
-      "coach": "Chikina N.A.",
+      "coach": "Balenyuk J.V.",
       "building": "complex1"
     },
     {
       "day": "friday",
       "classTime": 5,
+      "classTimeString": "16:25 - 18:00",
       "subject": "Basketball",
-      "coach": "Chikina N.A.",
+      "coach": "Jordan M.J.",
       "building": "complex1"
     }
   ]
