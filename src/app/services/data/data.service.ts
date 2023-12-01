@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/app/environments/environment/environment';
 import {
+  RecordsbookSubject,
   SortTypes,
   SportScheduleInfo,
   StudentDebtInfo,
   StudentGeneralInfo,
   StudentPayment,
   StudentRatingPlace,
-  StudentRecordsbook,
   StudentStudyPlan,
   StudentStudySchedule,
 } from 'src/app/interfaces/data';
@@ -47,9 +47,18 @@ export class DataService {
 
   getStudentRecordsbookByEmail(
     email: string
-  ): Observable<StudentRecordsbook[]> {
-    return this.http.get<StudentRecordsbook[]>(
+  ): Observable<RecordsbookSubject[]> {
+    return this.http.get<RecordsbookSubject[]>(
       `${this.baseUrl}/StudentRecordsbook?ownerEmail=${email}`
+    );
+  }
+
+  getStudentRecordsbookSemesterByEmail(
+    email: string,
+    semester: number
+  ): Observable<RecordsbookSubject[]> {
+    return this.http.get<RecordsbookSubject[]>(
+      `${this.baseUrl}/StudentRecordsbook?ownerEmail=${email}&semester=${semester}`
     );
   }
 
