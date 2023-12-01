@@ -1,44 +1,66 @@
 <section class="studyplan-page">
-    <div class="widget-card">
-      <h2 class="studyplan-page__title">
-        Study Plan
-        <div class="studyplan-page__title-icon">
-          <img src="assets/icons/bookmark-icon.svg" alt="" />
-        </div>
-      </h2>
-      <table class="studyplan-page__table">
-        <tr class="studyplan-page__table-title-row">
-          <th class="studyplan-page__table-title">Department</th>
-          <th class="studyplan-page__table-title">Subject</th>
-          <th class="studyplan-page__table-title">Year</th>
-          <th class="studyplan-page__table-title">Semester</th>
-          <th class="studyplan-page__table-title">Contol</th>
-          <th class="studyplan-page__table-title">Hours</th>
-          <th class="studyplan-page__table-title">Credit</th>
-        </tr>
-        <!-- <tr
-            class="studyplan-page__table-data-row"
-            *ngFor="let debt of data; index as i"
-          >
-            <td class="studyplan-page__table-data">
-              {{ debt.department }} [{{ debt.departmentAbr }}]
-            </td>
-            <td class="studyplan-page__table-data">
-              <strong>{{ debt.subject }}</strong>
-              <sub class="studyplan-page__table-data-subtitle"
-                >Lecturer: <strong>{{ debt.lecturer }}</strong></sub
-              >
-            </td>
-            <td class="studyplan-page__table-data">
-              {{ debt.year }}
-            </td>
-            <td class="studyplan-page__table-data">{{ debt.semester }}</td>
-            <td class="studyplan-page__table-data">
-              {{ debt.controlType }}
-            </td>
-          </tr> -->
-      </table>
-      {{ data | json }}
+  <div class="widget-card">
+    <h2 class="studyplan-page__title">
+      Study Plan
+      <div class="studyplan-page__title-icon">
+        <img src="assets/icons/book-icon.svg" alt="" />
+      </div>
+    </h2>
+    <div class="studyplan-page__subtitle-wrapper">
+      <h3 class="studyplan-page__subtitle">Semester</h3>
+      <div class="studyplan-page__subtitle-select">
+        <select
+          name="semesters"
+          id="semester-select"
+          (change)="onSemesterChange($event)"
+        >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+      </div>
     </div>
-  </section>
-  
+    <table class="studyplan-page__table">
+      <tr class="studyplan-page__table-title-row">
+        <th class="studyplan-page__table-title">Department</th>
+        <th class="studyplan-page__table-title">Subject</th>
+        <th class="studyplan-page__table-title">Year</th>
+        <th class="studyplan-page__table-title">Semester</th>
+        <th class="studyplan-page__table-title">Control</th>
+        <th class="studyplan-page__table-title">Credit</th>
+        <th class="studyplan-page__table-title">Hours</th>
+      </tr>
+      <tr
+        class="studyplan-page__table-data-row"
+        *ngFor="let subject of data; index as i"
+      >
+        <td class="studyplan-page__table-data">
+          {{ subject.department }} [{{ subject.departmentAbr }}]
+        </td>
+        <td class="studyplan-page__table-data">
+          <strong>{{ subject.name }}</strong>
+        </td>
+        <td class="studyplan-page__table-data">{{ subject.year }}</td>
+        <td class="studyplan-page__table-data">
+          {{ subject.semester }}
+        </td>
+        <td class="studyplan-page__table-data">{{ subject.type }}</td>
+        <td class="studyplan-page__table-data">
+          {{ subject.credit }}
+        </td>
+        <td class="studyplan-page__table-data">
+          {{ subject.hours }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>

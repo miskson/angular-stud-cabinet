@@ -18,26 +18,17 @@ export interface StudentGeneralInfo {
 }
 
 // --- STUDY PLAN INTERFACES
-interface StudyPlanSemester {
-  semester: string;
-  subjects: StudyPlanSubject[];
-}
-
-interface StudyPlanSubject {
-  name: string;
-  year: string;
-  semester: string;
-  credit: string;
-  hours: string;
-  type: string;
-  department: string;
-  departmentAbr: string;
-}
-
-export interface StudentStudyPlan {
+export interface StudyPlanSubject {
   ownerId: string;
   ownerEmail: string;
-  semesters: StudyPlanSemester[];
+  name: string;
+  department: string;
+  departmentAbr: string;
+  type: string;
+  year: number;
+  semester: number;
+  credit: number;
+  hours: number;
 }
 
 // --- STUDY PAYMENTS INTERFACES
@@ -68,7 +59,6 @@ export interface RecordsbookSubject {
   gradeECTS: string;
   gradeNat: string;
 }
-
 
 // --- STUDENT RATING INTERFACES
 export interface StudentRatingPlace {
