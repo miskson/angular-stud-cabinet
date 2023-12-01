@@ -18,26 +18,17 @@ export interface StudentGeneralInfo {
 }
 
 // --- STUDY PLAN INTERFACES
-interface StudyPlanSemester {
-  semester: string;
-  subjects: StudyPlanSubject[];
-}
-
-interface StudyPlanSubject {
-  name: string;
-  year: string;
-  semester: string;
-  credit: string;
-  hours: string;
-  type: string;
-  department: string;
-  departmentAbr: string;
-}
-
-export interface StudentStudyPlan {
+export interface StudyPlanSubject {
   ownerId: string;
   ownerEmail: string;
-  semesters: StudyPlanSemester[];
+  name: string;
+  department: string;
+  departmentAbr: string;
+  type: string;
+  year: number;
+  semester: number;
+  credit: number;
+  hours: number;
 }
 
 // --- STUDY PAYMENTS INTERFACES
@@ -48,13 +39,17 @@ export interface StudentPayment {
   currency: string;
   paymentDateString: string;
   paymentDateISO: string;
-  semester: string;
+  semester: number;
   contractNumber: string;
   contractISOdate: string;
+  contractDateString: string;
 }
 
 // --- RECORDSBOOK INTERFACES
-interface RecordsbookSubject {
+export interface RecordsbookSubject {
+  ownerId: string;
+  ownerEmail: string;
+  semester: number;
   name: string;
   department: string;
   departmentAbr: string;
@@ -62,32 +57,24 @@ interface RecordsbookSubject {
   lecturer: string;
   grade: string;
   gradeECTS: string;
-  gradeNationa: string;
-}
-
-interface RecordsbookSemester {
-  semester: string;
-  subjects: RecordsbookSubject[];
-}
-
-export interface StudentRecordsbook {
-  ownerId: string;
-  ownerEmail: string;
-  semesters: RecordsbookSemester[];
+  gradeNat: string;
 }
 
 // --- STUDENT RATING INTERFACES
 export interface StudentRatingPlace {
   name: string;
+  ownerEmail: string;
   group: string;
-  averageMark: string;
-  rating: string;
+  averageMark: number;
+  averageMarkNat: number;
+  rating: number;
 }
 
-export type StudentRatingSortType = 'asc' | 'desc';
+export type SortTypes = 'asc' | 'desc';
 
-// --- STUDENT DEBTS INTERFACES
-interface StudentDebtSubjectList {
+export interface StudentDebtInfo {
+  ownerId: string;
+  ownerEmail: string;
   subject: string;
   controlType: string;
   credit: string;
@@ -98,15 +85,21 @@ interface StudentDebtSubjectList {
   lecturer: string;
 }
 
-export interface StudentDebtInfo {
-  ownerId: string;
-  ownerEmail: string;
-  debts: StudentDebtSubjectList[];
-}
-
 // --- STUDY SCHEDULE INTERFACES
-interface SubjectsScheduleInfo {
+
+export type WeekDay =
+  | 'monday'
+  | 'tuesday'
+  | 'wednesday'
+  | 'thursday'
+  | 'friday'
+  | 'saturday'
+  | 'sunday';
+
+export interface SubjectsScheduleInfo {
+  day: WeekDay;
   classTime: number;
+  classTimeString: string;
   auditory: string;
   subject: string;
   classType: string;
@@ -116,19 +109,14 @@ interface SubjectsScheduleInfo {
 export interface StudentStudySchedule {
   ownerId: string;
   ownerEmail: string;
-  monday: SubjectsScheduleInfo[];
-  tuesday: SubjectsScheduleInfo[];
-  wednesday: SubjectsScheduleInfo[];
-  thursday: SubjectsScheduleInfo[];
-  friday: SubjectsScheduleInfo[];
-  saturday: SubjectsScheduleInfo[];
-  sunday: SubjectsScheduleInfo[];
+  days: SubjectsScheduleInfo[];
 }
 
 // --- SPORTS SCHEDULE INTERFACES
 export interface SportScheduleInfo {
   day: string;
   classTime: number;
+  classTimeString: string;
   subject: string;
   coach: string;
   building: string;

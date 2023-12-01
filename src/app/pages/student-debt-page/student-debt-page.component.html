@@ -1,2 +1,50 @@
-<p>student-debt-page works!</p>
-{{data | json}}
+<section class="debt-page">
+  <div class="widget-card">
+    <h2 class="debt-page__title">
+      Academic Debt
+      <div class="debt-page__title-icon">
+        <img src="assets/icons/exclam-icon.svg" alt="" />
+      </div>
+    </h2>
+    <table class="debt-page__table">
+      <tr class="debt-page__table-title-row">
+        <th class="debt-page__table-title">Department</th>
+        <th class="debt-page__table-title">Subject</th>
+        <th class="debt-page__table-title">Year</th>
+        <th class="debt-page__table-title">
+          Semester
+          <button
+            class="debt-page__table-title-btn"
+            (click)="toggleSortTypeAndSort()"
+          >
+            <div class="debt-page__table-title-icon">
+              <img src="assets/icons/sort-icon.svg" alt="sort" />
+            </div>
+          </button>
+        </th>
+        <th class="debt-page__table-title">Contol</th>
+      </tr>
+      <tr
+        class="debt-page__table-data-row"
+        *ngFor="let debt of data; index as i"
+      >
+        <td class="debt-page__table-data">
+          {{ debt.department }} [{{ debt.departmentAbr }}]
+        </td>
+        <td class="debt-page__table-data">
+          <strong>{{ debt.subject }}</strong>
+          <sub class="debt-page__table-data-subtitle"
+            >Lecturer: <strong>{{ debt.lecturer }}</strong></sub
+          >
+        </td>
+        <td class="debt-page__table-data">
+          {{ debt.year }}
+        </td>
+        <td class="debt-page__table-data">{{ debt.semester }}</td>
+        <td class="debt-page__table-data">
+          {{ debt.controlType }}
+        </td>
+      </tr>
+    </table>
+  </div>
+</section>

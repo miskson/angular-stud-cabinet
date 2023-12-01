@@ -1,0 +1,26 @@
+.general-info-page {
+    box-sizing: border-box;
+    height: 100%;
+
+    &__title-icon {
+        width: 30px;
+        height: auto;
+        display: inline-block;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__list-name {
+        font-size: 16px;
+        margin-bottom: 8px;
+        border-top: 1px solid #ccc;
+    }
+
+    &__list-value {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+}

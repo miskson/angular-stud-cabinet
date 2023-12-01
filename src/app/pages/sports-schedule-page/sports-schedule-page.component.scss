@@ -1,0 +1,150 @@
+.sportschedule-page {
+    box-sizing: border-box;
+    height: 100%;
+
+    &__title-icon,
+    &__subtitle-icon {
+        width: 30px;
+        height: auto;
+        display: inline-block;
+        padding: 0;
+        background-color: transparent;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__subtitle-icon {
+        width: 20px;
+    }
+
+    &__go-back-btn {
+        height: auto;
+        display: flex;
+        
+        padding: 6px;
+        margin: 0;
+        border-radius: 6px;
+        border: 1px dashed black;
+        background-color: transparent;
+
+        &:hover:not(:disabled) {
+            background: #c4c4c4ae;
+            outline: none;
+        }
+
+        &:focus:not(:disabled) {
+            outline: none;
+            background: #c4c4c4ae;
+        }
+
+        &:active:not(:disabled) {
+            background: #c4c4c47c;
+        }
+    }
+
+    &__go-back-btn-icon {
+        width: 26px;
+        height: auto;
+        display: block;
+    }
+
+    &__go-back-btn-text {
+        align-self: flex-end;
+        display: block;
+        height: auto;
+        display: block;
+    }
+
+    &__menu {
+        box-sizing: border-box;
+        padding-top: 24px;
+        min-width: 250px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: 0px 0px 0px #ccc;
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    &__menu-list-item {
+        float: left;
+        border: 1px solid transparent;
+        transition: 0.05s;
+        display: block;
+        color: #000;
+        font-size: 22px;
+        padding: 16px;
+        cursor: pointer;
+        border-top: 1px solid #ccc;
+
+        &:hover {
+            background-color: #0f749c27;
+
+            .sportschedule-page__menu-list-link {
+                color: black;
+            }
+        }
+
+        &:focus-within {
+            background-color: #0f749c27;
+
+            .sportschedule-page__menu-list-link {
+                color: black;
+            }
+        }
+    }
+
+    &__table-wrapper {
+        border: 2px solid #ccc;
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    &__table-title-icon {
+        width: 20px;
+        height: auto;
+        display: inline-block;
+        padding: 0;
+        background-color: transparent;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__table-title-row {
+        font-size: 22px;
+    }
+
+    &__table-data-row {
+        border-top: 1px solid #ccc;
+        padding: 16px 0;
+    }
+
+    &__table-data {
+        text-align: center;
+        font-size: 20px;
+        padding: 20px 0;
+    }
+
+    &__table-data-subtitle {
+        margin-top: 8px;
+        display: block;
+    }
+}

@@ -1,23 +1,35 @@
 <div class="login-page">
-  <div class="login-page__wrapper">
+  <section class="widget-card">
+    <div class="login-page__suptitle">
+      <div class="login-page__suptitle-logo">
+        <img src="assets/icons/khpi-logo.svg" alt="est.1885" />
+      </div>
+      <h6>National Technical University</h6>
+      <h5>«Kharkiv Polytechnic Institute»</h5>
+    </div>
+    <h2 class="login-page__title">Students Cabinet</h2>
     <form
       class="login-page__form"
       [formGroup]="login"
       (ngSubmit)="loginUser(login)"
     >
       <app-cabinet-input
+        class="login-page__form-input"
         labelText="E-mail"
         placeholder="student.email@exmpl.khpi.edu.ua"
         type="email"
         [control]="getControl('email')"
       ></app-cabinet-input>
       <app-cabinet-input
+        class="login-page__form-input"
         labelText="Password"
         type="password"
         placeholder="Password"
         [control]="getControl('password')"
       ></app-cabinet-input>
-      <app-cabinet-button type="submit">Log-in</app-cabinet-button>
+      <app-cabinet-button class="login-page__form-btn" type="submit"
+        >Log-in</app-cabinet-button
+      >
     </form>
-  </div>
+  </section>
 </div>

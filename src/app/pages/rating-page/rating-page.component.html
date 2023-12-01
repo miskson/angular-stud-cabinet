@@ -1,2 +1,41 @@
-<p>rating-page works!</p>
-{{data | json}}
+<section class="rating-page">
+  <div class="widget-card">
+    <h2 class="rating-page__title">
+      Rating
+      <div class="rating-page__title-icon">
+        <img src="assets/icons/rate-icon.svg" alt="" />
+      </div>
+    </h2>
+
+    <table class="rating-page__table">
+      <tr class="rating-page__table-title-row">
+        <th class="rating-page__table-title">
+          Place
+          <button
+            class="rating-page__table-title-btn"
+            (click)="toggleSortTypeAndSort()"
+          >
+            <div class="rating-page__table-title-icon">
+              <img src="assets/icons/sort-icon.svg" alt="sort" />
+            </div>
+          </button>
+        </th>
+        <th class="rating-page__table-title">Name</th>
+        <th class="rating-page__table-title">Group</th>
+        <th class="rating-page__table-title">Avg. Mark</th>
+        <th class="rating-page__table-title">National</th>
+      </tr>
+      <tr
+        class="rating-page__table-data-row"
+        [ngClass]="{ accent: place.ownerEmail === userEmail }"
+        *ngFor="let place of data; index as i"
+      >
+        <td class="rating-page__table-data">{{ place.rating }}</td>
+        <td class="rating-page__table-data">{{ place.name }}</td>
+        <td class="rating-page__table-data">{{ place.group }}</td>
+        <td class="rating-page__table-data">{{ place.averageMark }}</td>
+        <td class="rating-page__table-data">{{ place.averageMarkNat }}</td>
+      </tr>
+    </table>
+  </div>
+</section>

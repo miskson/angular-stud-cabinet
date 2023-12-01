@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SortTypes, StudentDebtInfo } from 'src/app/interfaces/data';
 import { DataService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -9,11 +10,21 @@ import { DataService } from 'src/app/services/data/data.service';
 export class StudentDebtPageComponent {
   constructor(private dataService: DataService) {}
 
-  data = {};
+  data: StudentDebtInfo[] | [] = [];
   email: string | null = sessionStorage.getItem('email');
 
-  getStudentDebtsInfoByEmail(email: string) {
-    this.dataService.getStudentDebtsByEmail(email as string).subscribe(
+  sortType: SortTypes = 'desc';
+
+  toggleSortTypeAndSort(): void {
+    console.log('toggle sort');
+    this.sortType = this.sortType === 'asc' ? 'desc' : 'asc';
+    console.log('type', this.sortType);
+    this.getStudentDebtsInfoByEmail(this.email as string, this.sortType);
+    console.log(this.data);
+  }
+
+  getStudentDebtsInfoByEmail(email: string, sort: SortTypes = 'desc') {
+    this.dataService.getStudentDebtsByEmail(email as string, sort).subscribe(
       (res) => {
         this.data = res;
       },
@@ -24,6 +35,6 @@ export class StudentDebtPageComponent {
   }
 
   ngOnInit(): void {
-    this.getStudentDebtsInfoByEmail(this.email as string);
+    this.getStudentDebtsInfoByEmail(this.email as string, this.sortType);
   }
 }

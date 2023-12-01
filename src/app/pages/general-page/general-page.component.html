@@ -1,2 +1,68 @@
-<p>general-page works!</p>
-{{data | json}}
+<section class="general-info-page">
+  <div class="widget-card">
+    <h2 class="general-info-page__title">
+      General Info
+      <div class="general-info-page__title-icon">
+        <img src="assets/icons/student-icon.svg" alt="" />
+      </div>
+    </h2>
+    <dl class="general-info-page__list">
+      <dt class="general-info-page__list-name">Surname:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.surname }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Name:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.name }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Patronymic:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.patronymic }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Year:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.year }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Group:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.group }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Faculty:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.faculty }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Department:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.department }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Speciality:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.speciality }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Proffesion:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.profession }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Speciality:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.speciality }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Program:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.program }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Degree:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.degree }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Form:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.form }}</strong>
+      </dd>
+      <dt class="general-info-page__list-name">Payment:</dt>
+      <dd class="general-info-page__list-value">
+        <strong>{{ data.payment }}</strong>
+      </dd>
+    </dl>
+  </div>
+</section>

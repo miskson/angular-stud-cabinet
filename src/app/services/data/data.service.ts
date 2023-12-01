@@ -3,14 +3,15 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/app/environments/environment/environment';
 import {
+  RecordsbookSubject,
+  SortTypes,
   SportScheduleInfo,
   StudentDebtInfo,
   StudentGeneralInfo,
   StudentPayment,
   StudentRatingPlace,
-  StudentRecordsbook,
-  StudentStudyPlan,
   StudentStudySchedule,
+  StudyPlanSubject,
 } from 'src/app/interfaces/data';
 
 @Injectable({
@@ -29,23 +30,44 @@ export class DataService {
     );
   }
 
-  getStudentStudyPlanByEmail(email: string): Observable<StudentStudyPlan[]> {
-    return this.http.get<StudentStudyPlan[]>(
+  getStudentStudyPlanByEmail(email: string): Observable<StudyPlanSubject[]> {
+    return this.http.get<StudyPlanSubject[]>(
       `${this.baseUrl}/studyPlan?ownerEmail=${email}`
     );
   }
 
-  getStudentPaymentInfoByEmail(email: string): Observable<StudentPayment[]> {
+  getStudentStudyPlanSemesterByEmail(
+    email: string,
+    semester: number
+  ): Observable<StudyPlanSubject[]> {
+    return this.http.get<StudyPlanSubject[]>(
+      `${this.baseUrl}/studyPlan?ownerEmail=${email}&semester=${semester}`
+    );
+  }
+
+  getStudentPaymentInfoByEmail(
+    email: string,
+    sort: SortTypes = 'desc'
+  ): Observable<StudentPayment[]> {
     return this.http.get<StudentPayment[]>(
-      `${this.baseUrl}/studentPayments?ownerEmail=${email}`
+      `${this.baseUrl}/studentPayments?ownerEmail=${email}&_sort=semester&_order=${sort}`
     );
   }
 
   getStudentRecordsbookByEmail(
     email: string
-  ): Observable<StudentRecordsbook[]> {
-    return this.http.get<StudentRecordsbook[]>(
+  ): Observable<RecordsbookSubject[]> {
+    return this.http.get<RecordsbookSubject[]>(
       `${this.baseUrl}/StudentRecordsbook?ownerEmail=${email}`
+    );
+  }
+
+  getStudentRecordsbookSemesterByEmail(
+    email: string,
+    semester: number
+  ): Observable<RecordsbookSubject[]> {
+    return this.http.get<RecordsbookSubject[]>(
+      `${this.baseUrl}/StudentRecordsbook?ownerEmail=${email}&semester=${semester}`
     );
   }
 
@@ -57,9 +79,12 @@ export class DataService {
     );
   }
 
-  getStudentDebtsByEmail(email: string): Observable<StudentDebtInfo[]> {
+  getStudentDebtsByEmail(
+    email: string,
+    sort: SortTypes = 'desc'
+  ): Observable<StudentDebtInfo[]> {
     return this.http.get<StudentDebtInfo[]>(
-      `${this.baseUrl}/StudentAcademicDebt?ownerEmail=${email}`
+      `${this.baseUrl}/StudentAcademicDebt?ownerEmail=${email}&_sort=semester&_order=${sort}`
     );
   }
 
