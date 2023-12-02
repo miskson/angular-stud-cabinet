@@ -23,7 +23,7 @@
         font-size: 0.875rem;
         line-height: 1.5;
         padding: 0 10px;
-        width: 274px;
+        width: 234px;
         cursor: text;
         position: relative;
         border-radius: 7px;
@@ -39,6 +39,10 @@
         &:focus-within:has(.input-invalid) {
             border-color: #D32F2F;
         }
+
+        @media (min-width: 300px) {
+            width: 274px;
+        }
     }
 
     &__field {
@@ -51,8 +55,11 @@
     }
 
     &__field.initial-password {
-        width: 232px;
+        width: 200px;
         margin-right: 2px;
+        @media (min-width: 300px) {
+            width: 234px;
+        }
     }
 
     &__field.input-disabled {
