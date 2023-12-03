@@ -28,9 +28,7 @@ export class LoginPageComponent {
     private router: Router,
     private authService: AuthService,
     private fb: FormBuilder
-  ) {
-    this.login.valueChanges.subscribe((val) => console.log(val));
-  }
+  ) {}
 
   ngOnInit(): void {}
 

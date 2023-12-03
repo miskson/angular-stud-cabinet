@@ -8,12 +8,11 @@ import { DataService } from 'src/app/services/data/data.service';
   styleUrls: ['./main-page.component.scss'],
 })
 export class MainPageComponent {
-  constructor(
-    private router: Router,
-    private dataService: DataService
-  ) {}
+  constructor(private router: Router, private dataService: DataService) {}
 
   isSidebarActive: boolean = true;
+
+  screenWidth: number = window.innerWidth;
 
   data: any = {};
 
@@ -37,6 +36,10 @@ export class MainPageComponent {
 
   ngOnInit(): void {
     this.getStudentBioByEmail(this.email as string);
+    console.log('thisScreen width', this.screenWidth);
+    this.screenWidth < 768
+      ? (this.isSidebarActive = false)
+      : (this.isSidebarActive = true);
   }
 
   toggleSidebar() {
