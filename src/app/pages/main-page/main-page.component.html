@@ -1,53 +1,69 @@
-<main class="main-page" [ngClass]="{ 'sidebar-active': isSidebarActive }">
-    <aside class="main-page__sidebar">
-        <ul class="main-page__sidebar-list">
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="general-info">General Info</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="recordsbook">Recordsbook</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="rating">Rating</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="student-debt">Academic Debt</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="study-schedule">Study Schedule</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="sports-schedule">Sports Schedule</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="study-plan">Study Plan</a>
-            </li>
-            <li class="main-page__sidebar-list-item">
-                <a class="main-page__sidebar-list-link" routerLink="payment">Study Payment</a>
-            </li>
-        </ul>
-    </aside>
-    <div class="main-page__content-wrapper">
-        <header class="main-page__header">
-            <div class="main-page__header-info">
-                <button (click)="toggleSidebar()" class="main-page__header-sidebar-btn">
-                    <img class="main-page__header-sidebar-btn-icon" [src]="
+<main
+  class="main-page"
+  [ngClass]="{ 'sidebar-active': isSidebarActive, mobile: screenWidth < 768 }"
+>
+  <aside class="main-page__sidebar">
+    <button
+      (click)="toggleSidebar()"
+      class="main-page__sidebar-btn"
+      *ngIf="screenWidth < 768"
+    >
+      <img
+        class="main-page__sidebar-btn-icon"
+        src="assets/icons/back-arrow.svg"
+        alt="Hide Sidebar"
+      />
+    </button>
+    <ul class="main-page__sidebar-list">
+      <li
+        class="main-page__sidebar-list-item"
+        *ngFor="let tab of tabs"
+        (click)="screenWidth < 768 && toggleSidebar()"
+      >
+        <a
+          class="main-page__sidebar-list-link"
+          [routerLink]="tabsLinks[tab.replaceAll(' ', '')]"
+          >{{ tab }}</a
+        >
+      </li>
+    </ul>
+  </aside>
+  <div
+    class="main-page__content-wrapper"
+    [ngClass]="{ 'mobile-blur': isSidebarActive && screenWidth < 768 }"
+  >
+    <header class="main-page__header">
+      <div class="main-page__header-info">
+        <button
+          (click)="toggleSidebar()"
+          class="main-page__header-sidebar-btn"
+          *ngIf="(screenWidth < 768 && !isSidebarActive) || screenWidth >= 768"
+        >
+          <img
+            class="main-page__header-sidebar-btn-icon"
+            [src]="
               isSidebarActive
                 ? 'assets/icons/back-arrow.svg'
                 : 'assets/icons/burger-menu.svg'
-            " alt="Toggle Sidebar" />
-                </button>
-                <div class="main-page__header-username">
-                    <sup>Logged as:</sup>
-                    <h3>{{data.studentName}} {{data.studentSurname}}</h3>
-                    <sub>{{data.studentEmail}}</sub>
-                </div>
-            </div>
-            <app-cabinet-button class="main-page__header-logout-btn" displayType="secondary"
-                (onClick)="logOut()">Log-out</app-cabinet-button>
-        </header>
-        <div class="main-page__content">
-            <router-outlet></router-outlet>
+            "
+            alt="Toggle Sidebar"
+          />
+        </button>
+        <div class="main-page__header-username">
+          <sup>Logged as:</sup>
+          <h3>{{ data.studentName }} {{ data.studentSurname }}</h3>
+          <sub>{{ data.studentEmail }}</sub>
         </div>
+      </div>
+      <app-cabinet-button
+        class="main-page__header-logout-btn"
+        displayType="secondary"
+        (onClick)="logOut()"
+        >Log-out</app-cabinet-button
+      >
+    </header>
+    <div class="main-page__content">
+      <router-outlet></router-outlet>
     </div>
+  </div>
 </main>
