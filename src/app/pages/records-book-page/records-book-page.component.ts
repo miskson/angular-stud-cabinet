@@ -12,6 +12,7 @@ export class RecordsBookPageComponent {
 
   data: RecordsbookSubject[] | [] = [];
   email: string | null = sessionStorage.getItem('email');
+  currentSemester: number = 1;
 
   onSemesterChange(e: any) {
     this.getStudentRecordsbookSemesterByEmail(
@@ -20,20 +21,55 @@ export class RecordsBookPageComponent {
     );
   }
 
-  getStudentRecordsbookSemesterByEmail(email: string, semester: number = 1) {
-    this.dataService
-      .getStudentRecordsbookSemesterByEmail(email as string, semester)
-      .subscribe(
+  async getInitialInfo() {
+    await this.getStudentCurrentSemesterByEmail(this.email as string);
+    await this.getStudentRecordsbookSemesterByEmail(
+      this.email as string,
+      this.currentSemester
+    );
+
+    console.log(this.data, this.currentSemester);
+  }
+
+  getStudentCurrentSemesterByEmail(email: string): Promise<void> {
+    return new Promise((resolve, reject) => {
+      this.dataService.getStudentGeneralInfoByEmail(email as string).subscribe(
         (res) => {
-          this.data = res;
+          const { semester } = res[0];
+          console.log('getStudentCurrentSemesterByEmail', semester);
+          this.currentSemester = semester;
+          resolve();
         },
         (err) => {
           console.error(err, 'Request Error');
+          reject(err);
         }
       );
+    });
+  }
+
+  getStudentRecordsbookSemesterByEmail(
+    email: string,
+    semester: number = 1
+  ): Promise<void> {
+    return new Promise((resolve, reject) => {
+      this.dataService
+        .getStudentRecordsbookSemesterByEmail(email as string, semester)
+        .subscribe(
+          (res) => {
+            this.data = res;
+            console.log('getStudentRecordsbookSemesterByEmail', res);
+            resolve();
+          },
+          (err) => {
+            console.error(err, 'Request Error');
+            reject(err);
+          }
+        );
+    });
   }
 
   ngOnInit(): void {
-    this.getStudentRecordsbookSemesterByEmail(this.email as string, 2);
+    this.getInitialInfo();
   }
 }

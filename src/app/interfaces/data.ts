@@ -5,7 +5,8 @@ export interface StudentGeneralInfo {
   name: string;
   surname: string;
   patronymic: string;
-  year: string;
+  year: number;
+  semester: number,
   group: string;
   faculty: string;
   department: string;
