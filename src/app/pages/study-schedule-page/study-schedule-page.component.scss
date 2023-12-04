@@ -5,7 +5,7 @@
     .widget-card {
         padding: 10px 4px;
 
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
             padding: 10px 20px;
         }
     }
@@ -13,7 +13,7 @@
     &__title {
         font-size: 24px;
 
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
             font-size: 1.5em;
         }
     }
@@ -21,7 +21,7 @@
     &__subtitle {
         font-size: 22px;
 
-        @media (min-width: 600px) {
+        @media (min-width: 768px) {
             font-size: 1.17em;
         }
     }
@@ -36,7 +36,7 @@
         padding: 0;
         background-color: transparent;
 
-        @media (min-width: 600px) {
+        @media (min-width: 912px) {
             width: 30px;
         }
 
@@ -81,7 +81,7 @@
             font-size: 14px;
         }
 
-        @media (min-width: 600px) {
+        @media (min-width: 912px) {
             font-size: 22px;
         }
     }
@@ -100,7 +100,11 @@
             font-size: 12px;
         }
 
-        @media (min-width: 600px) {
+        @media (min-width: 420px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 912px) {
             font-size: 20px;
         }
     }
