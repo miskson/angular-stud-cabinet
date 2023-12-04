@@ -13,6 +13,7 @@
           name="semesters"
           id="semester-select"
           (change)="onSemesterChange($event)"
+          [value]="currentSemester"
         >
           <option value="1">1</option>
           <option value="2">2</option>
@@ -31,7 +32,6 @@
     </div>
     <table class="studyplan-page__table">
       <tr class="studyplan-page__table-title-row">
-        <th class="studyplan-page__table-title">Department</th>
         <th class="studyplan-page__table-title">Subject</th>
         <th class="studyplan-page__table-title">Year</th>
         <th class="studyplan-page__table-title">Semester</th>
@@ -44,10 +44,13 @@
         *ngFor="let subject of data; index as i"
       >
         <td class="studyplan-page__table-data">
-          {{ subject.department }} [{{ subject.departmentAbr }}]
-        </td>
-        <td class="studyplan-page__table-data">
           <strong>{{ subject.name }}</strong>
+          <sub class="studyplan-page__table-data-subtitle"
+            >Department:
+            <strong
+              >{{ subject.department }} [{{ subject.departmentAbr }}]</strong
+            ></sub
+          >
         </td>
         <td class="studyplan-page__table-data">{{ subject.year }}</td>
         <td class="studyplan-page__table-data">
