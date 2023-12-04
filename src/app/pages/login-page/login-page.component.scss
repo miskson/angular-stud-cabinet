@@ -10,15 +10,25 @@
     align-content: center;
 
     .widget-card {
-        max-width: 300px;
-        height: fit-content;
-        padding: 20px;
-        box-shadow: 4px 4px 14px #0f749c27;
+        background-color: transparent;
+        box-shadow: none;
+
+        @media (min-width: 300px) {
+            background-color: #fff;
+            max-width: 300px;
+            box-shadow: 4px 4px 14px #0f749c27;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 20px;
+        }
     }
 
     &__suptitle {
         text-align: center;
-        h5, h6 {
+
+        h5,
+        h6 {
             padding: 0;
             margin: 4px;
         }
@@ -26,10 +36,6 @@
         h6 {
             font-weight: 400;
         }
-    }
-
-    &__title {
-        text-align: center;
     }
 
     &__suptitle-logo {
@@ -40,6 +46,11 @@
         img {
             width: 100%;
         }
+    }
+
+    &__title {
+        text-align: center;
+        margin: 18px 0;
     }
 
     &__form-btn {

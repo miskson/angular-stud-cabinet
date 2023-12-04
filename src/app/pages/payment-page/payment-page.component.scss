@@ -2,10 +2,22 @@
     box-sizing: border-box;
     height: 100%;
 
+    &__title {
+        font-size: 24px;
+
+        @media (min-width: 768px) {
+            font-size: 1.5em;
+        }
+    }
+
     &__title-icon {
-        width: 30px;
+        width: 22px;
         height: auto;
         display: inline-block;
+
+        @media (min-width: 768px) {
+            width: 30px;
+        }
 
         img {
             width: 100%;
@@ -54,7 +66,15 @@
     }
 
     &__table-title-row {
-        font-size: 22px;
+        font-size: 10px;
+
+        @media (min-width: 360px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 912px) {
+            font-size: 22px;
+        }
     }
 
     &__table-data-row {
@@ -64,7 +84,19 @@
 
     &__table-data {
         text-align: center;
-        font-size: 20px;
+        font-size: 10px;
         padding: 20px 0;
+
+        @media (min-width: 360px) {
+            font-size: 12px;
+        }
+
+        @media (min-width: 420px) {
+            font-size: 14px;
+        }
+
+        @media (min-width: 912px) {
+            font-size: 20px;
+        }
     }
 }
