@@ -1,14 +1,14 @@
 # Instalation
 
-To run this project you have to install packeges. Firstly run `npm install` and after that run `npm install -g json-server@0.17.4` so you can run project properly without json-server errors.
+To run this project correctly you have to install packages first. Run `npm install` and after that run `npm install -g json-server@0.17.4` to avoid [json-server](https://github.com/typicode/json-server/tree/v0) errors while running the application.
 
 # Cabinet
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
-## Demo
+# Demo
 
-Run `npm run demo` to start demonstration server. Navigate to `http://localhost:4200/`. Feel free to roam around. The application will automatically reload if you change any of the source files.
+Run `npm run demo` command to start demonstration server. Navigate to `http://localhost:4200/`. Feel free to roam around. The application will automatically reload if you change any of the source files.
 
 ## Development server
 
