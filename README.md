@@ -10,6 +10,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm run demo` command to start demonstration server. Navigate to `http://localhost:4200/`. Feel free to roam around. The application will automatically reload if you change any of the source files.
 
+Сredentials for mock user are:
+Email: john.doe@cit.khpi.edu.ua
+Password": jhonny228
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
