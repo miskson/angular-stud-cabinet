@@ -1,11 +1,12 @@
 {
   "name": "cabinet",
   "version": "0.0.0",
+  "homepage": "https://miskson.github.io/angular-stud-cabinet",
   "scripts": {
     "ng": "ng",
     "save-json-api": "node ./src/app/server/scripts/save-json-db-api.js",
     "start": "ng serve",
-    "build": "ng build --base-href=/angular-stud-cabinet",
+    "build": "ng build --base-href=/angular-stud-cabinet && npm run save-json-api",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "init-db": "json-server --watch ./src/DB/db.json",
