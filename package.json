@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href=/angular-stud-cabinet",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "init-db": "json-server --watch ./src/DB/db.json",
