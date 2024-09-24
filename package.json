@@ -5,7 +5,7 @@
     "ng": "ng",
     "save-json-api": "node ./src/app/server/scripts/save-json-db-api.js",
     "start": "ng serve",
-    "build": "ng build --base-href=/angular-stud-cabinet && npm run save-json-api",
+    "build": "ng build --base-href=/angular-stud-cabinet",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "init-db": "json-server --watch ./src/DB/db.json",
